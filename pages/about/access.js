@@ -30,7 +30,7 @@ export default function Access() {
         </Box>
         <Box h="100%">
           <GoogleMapReact
-            bootstrapURLKeys={{ key: "AIzaSyBFVTA__-Qlvge85KOsQoaT9-Era_OxvaE" }}
+            bootstrapURLKeys={{ key: "" }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
           />
