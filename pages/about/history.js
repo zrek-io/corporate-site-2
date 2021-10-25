@@ -19,7 +19,7 @@ export default function History() {
               right: "0",
               width: "1px",
               height: "100%",
-              backgroundColor: "#808080"
+              backgroundColor: "primary.150"
             }}
           >
             <Text
@@ -33,7 +33,7 @@ export default function History() {
                 transform: "translate(50%, -50%)",
                 width: "1rem",
                 height: "1rem",
-                backgroundColor: "#32a9da",
+                backgroundColor: "primary.200",
                 borderRadius: "50%",
                 zIndex: "100"
               }}
@@ -58,7 +58,7 @@ export default function History() {
               right: "0",
               width: "1px",
               height: "100%",
-              backgroundColor: "#808080"
+              backgroundColor: "primary.150"
             }}
           >
             <Text
@@ -72,7 +72,7 @@ export default function History() {
                 transform: "translate(50%, -50%)",
                 width: "1rem",
                 height: "1rem",
-                backgroundColor: "#32a9da",
+                backgroundColor: "primary.200",
                 borderRadius: "50%",
                 zIndex: "100"
               }}
@@ -97,7 +97,7 @@ export default function History() {
               right: "0",
               width: "1px",
               height: "100%",
-              backgroundColor: "#808080"
+              backgroundColor: "primary.150"
             }}
           >
             <Text
@@ -111,7 +111,7 @@ export default function History() {
                 transform: "translate(50%, -50%)",
                 width: "1rem",
                 height: "1rem",
-                backgroundColor: "#32a9da",
+                backgroundColor: "primary.200",
                 borderRadius: "50%",
                 zIndex: "100"
               }}

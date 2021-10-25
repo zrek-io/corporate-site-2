@@ -38,8 +38,8 @@ export default function Brand() {
         <Box w="100%" mb={20}>
           <SectionTitle SectionTitle="カラー" />
           <Box display="flex" alignItem="center" justifyContent="space-evenly" w="100%" my={6}>
-            <Box w={72} h={28} bgColor="#32a9da"></Box>
-            <Box w={72} h={28} bgColor="#0F308F"></Box>
+            <Box w={72} h={28} bgColor="primary.200"></Box>
+            <Box w={72} h={28} bgColor="primary.350"></Box>
           </Box>
           <Box w="60%" mx="auto" lineHeight={8}>
             <Text py={5}>ゼットレックカラーは、青で統一されています。クールさとシンプルさがあるカラーとして選ばれ、ロゴと組み合わせたときのストーリー性を追求したカラーとなっています。</Text>
