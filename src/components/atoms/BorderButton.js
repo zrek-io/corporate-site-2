@@ -7,15 +7,16 @@ export const BorderButton = (props) => {
     <Button
       w={width}
       border="1px"
-      borderColor="#32a9da"
+      borderColor="primary.200"
       borderRadius="3xl"
       bg="none"
-      color="#000000"
+      color="primary.400"
       fontWeight="normal"
       _hover={{ 
-        bg: "#000000",
+        bg: "primary.400",
         border: "none",
-        color: "#ffffff"
+        color: "primary.50",
+        transition: ".5s"
       }}
     >
       {title}

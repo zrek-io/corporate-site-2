@@ -1,16 +1,17 @@
 import { Button } from "@chakra-ui/button"
 
 export const PrimaryButton = (props) => {
-  const { title, width} = props
+  const { title, width, margin } = props
 
   return (
     <Button
       w={width}
+      m={margin}
       borderRadius="3xl"
-      bg="#32A9DA"
-      color="#ffffff"
+      bg="primary.200"
+      color="primary.50"
       fontWeight="normal"
-      _hover={{ bg: "#000000" }}
+      _hover={{ bg: "primary.400", transition: ".5s" }}
     >
       {title}
     </Button>
