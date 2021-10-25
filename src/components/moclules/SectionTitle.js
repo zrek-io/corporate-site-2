@@ -6,9 +6,9 @@ export const SectionTitle = (props) => {
   return (
     <Box w="100%">
       <Box>
-        <Heading as="h3" fontSize="3xl" fontWeight="normal" color="#32a9da">{SectionTitle}</Heading>
+        <Heading as="h3" size="sm" color="primary.200">{SectionTitle}</Heading>
       </Box>
-      <Divider mt={4} mb={8} borderColor="#808080" />
+      <Divider mt={4} mb={8} borderColor="primary.150" />
     </Box>
   )
 }

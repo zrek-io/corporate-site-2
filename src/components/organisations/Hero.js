@@ -9,10 +9,10 @@ export const Hero = (props) => {
       alignItems="center"
       justifyContent="center"
       h={60}
-      bgGradient="linear(to-b, #1862ac, #1E9CD7)"
+      bgGradient="linear(to-b, primary.250, primary.300)"
       textAlign="center"
     >
-      <Heading fontWeight="normal" color="#fff" fontSize="5xl">{title}</Heading>
+      <Heading as="h1" size="xl" color="primary.50">{title}</Heading>
     </Box>
   )
 }
