@@ -1,16 +1,16 @@
 import { Box, Text } from '@chakra-ui/react';
 import { SectionTitle } from '../../src/components/moclules/SectionTitle';
 import { Hero } from '../../src/components/organisations/Hero';
-import GoogleMapReact from 'google-map-react';
+// import GoogleMapReact from 'google-map-react';
 
 export default function Access() {
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627
-    },
-    zoom: 11
-  };
+  // const defaultProps = {
+  //   center: {
+  //     lat: 10.99835602,
+  //     lng: 77.01502627
+  //   },
+  //   zoom: 11
+  // };
 
   return (
     <Box>
@@ -28,13 +28,13 @@ export default function Access() {
           <SectionTitle SectionTitle="アクセス" />
           <Text>ここに地図</Text>
         </Box>
-        <Box h="100%">
+        {/* <Box h="100%">
           <GoogleMapReact
             bootstrapURLKeys={{ key: "" }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
           />
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   )
