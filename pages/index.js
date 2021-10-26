@@ -6,6 +6,7 @@ import HomeHeroMessage from '../src/static/hero_message.png'
 import HeroBackgroundImage from '../src/static/home.jpeg'
 import { BorderButton } from '../src/components/atoms/BorderButton'
 // import { Header } from '../src/components/organisations/Header'
+import { NewsItem } from '../src/components/moclules/NewsItem';
 
 export default function Home() {
   return (
@@ -57,11 +58,18 @@ export default function Home() {
             </Box>
           </Box>
         </Box>
-        <Box as="section" w="60%" mx="auto" my={16} textAlign="center">
+        <Box as="section" w="73%" mx="auto" my={16} textAlign="center">
           <Box py={[8, 12]}>
             <Heading as="h1" size="xl">ニュース</Heading>
             <Heading as="h2" size="md" py={4}>News</Heading>
-            <PrimaryButton title='ニュース一覧' width="20%"  />
+            <Box py={6}>
+              <NewsItem date="2021.9.18" tag="お知らせ" title="代表の今村がHATSUFESで成果発表会を行いました。" />
+              <NewsItem date="2021.8.23" tag="サービス" title="カーボンカードのランディングページを公開しました lp.z-rek.com/" />
+              <NewsItem date="2021.7.3" tag="サービス" title="地域コミュニティサービス『vivicom』実証実験α版リリースしました" />
+              <NewsItem date="2021.7.2" tag="コーポレート" title="Accelerate Membership Programに採択されました" />
+              <NewsItem date="2021.6.13" tag="コーポレート" title="鈴木ç隆道氏が顧問に就任しました" />
+            </Box>
+            <PrimaryButton title='ニュース一覧' width="17%"  />
           </Box>
         </Box>
       </Box>
