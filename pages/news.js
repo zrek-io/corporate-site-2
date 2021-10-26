@@ -1,5 +1,4 @@
 import { Box } from "@chakra-ui/layout"
-import { Card } from "../src/components/moclules/Card"
 import { NewsItem } from "../src/components/moclules/NewsItem"
 import { Hero } from "../src/components/organisations/Hero"
 
