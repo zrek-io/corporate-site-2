@@ -12,6 +12,7 @@ export const PrimaryButton = (props) => {
       color="primary.50"
       fontWeight="normal"
       _hover={{ bg: "primary.400", transition: ".5s" }}
+      _focus={{ focus: "none" }}
     >
       {title}
     </Button>

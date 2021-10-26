@@ -18,6 +18,7 @@ export const BorderButton = (props) => {
         color: "primary.50",
         transition: ".5s"
       }}
+      _focus={{ focus: "none" }}
     >
       {title}
     </Button>
