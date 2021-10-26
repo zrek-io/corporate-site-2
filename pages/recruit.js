@@ -1,6 +1,7 @@
-import { Box, Text } from "@chakra-ui/layout"
+import { Box, Center, Text } from "@chakra-ui/layout"
 import { Hero } from "../src/components/organisations/Hero"
 import { SectionTitle } from '../src/components/moclules/SectionTitle';
+import { PrimaryButton } from '../src/components/atoms/PrimaryButton';
 
 export default function Recruit() {
   return (
@@ -28,6 +29,9 @@ export default function Recruit() {
           <Text>インターン</Text>
         </Box>
       </Box>
+      <Center>
+        <PrimaryButton title="少し興味がある" width="13%" margin="8" />
+      </Center>
     </Box>
   )
 }
