@@ -1,9 +1,11 @@
 import { Box,Heading } from "@chakra-ui/layout";
 import { Hero } from "../../src/components/organisations/Hero";
+import { Header } from '../src/components/organisations/Header'
 
 export default function Identity() {
   return (
     <Box>
+      <Header />
       <Hero title="経営理念" />
       <Box as="main" w="60%" mx="auto">
         <Box display="flex" alignItems="center" justifyContent="center" w="100%" h={40} my={16} bgColor="primary.100">

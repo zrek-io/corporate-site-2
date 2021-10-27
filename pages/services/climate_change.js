@@ -6,10 +6,12 @@ import { Hero } from "../../src/components/organisations/Hero";
 import climateChangeImage from "../../src/static/climate-change.jpeg"
 import HomeServiceImage from '../../src/static/home_service.png'
 import { BorderButton } from '../../src/components/atoms/BorderButton';
+import { Header } from '../src/components/organisations/Header'
 
 export default function ClimateChange() {
   return (
     <Box>
+      <Header />
       <Hero title="気候変動対策" />
       <Box as="main" w="80%" mx="auto">
         <Box display="flex" alignItems="center" justifyContent="center" my={20}>

@@ -3,10 +3,12 @@ import { Box, Text } from "@chakra-ui/layout";
 import { SectionTitle } from "../../src/components/moclules/SectionTitle";
 import { Hero } from "../../src/components/organisations/Hero";
 import randdIamge from "../../src/static/randd.jpeg"
+import { Header } from '../src/components/organisations/Header'
 
 export default function Randd() {
   return (
     <Box>
+      <Header />
       <Hero title="研究開発" />
       <Box as="main" w="80%" mx="auto">
         <Box display="flex" alignItems="center" justifyContent="center" mt={20} mb={8}>

@@ -1,9 +1,11 @@
 import { Box, Text, Heading, OrderedList, ListItem } from "@chakra-ui/layout";
 import { Hero } from "../src/components/organisations/Hero";
+import { Header } from '../src/components/organisations/Header'
 
 export default function PrivacyPolicy() {
   return (
     <Box>
+      <Header />
       <Hero title="個人情報保護方針" />
       <Box as="main" w="60%" mx="auto">
         <Box mt={12} mb={20}>

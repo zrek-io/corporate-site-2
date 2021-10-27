@@ -4,10 +4,12 @@ import { PrimaryButton } from "../../src/components/atoms/PrimaryButton";
 import { SectionTitle } from "../../src/components/moclules/SectionTitle";
 import { Hero } from "../../src/components/organisations/Hero";
 import softwareImage from "../../src/static/software.jpeg"
+import { Header } from '../src/components/organisations/Header'
 
 export default function Software() {
   return (
     <Box>
+      <Header />
       <Hero title="ソフトウェア開発" />
       <Box as="main" w="80%" mx="auto">
         <Box display="flex" alignItems="center" justifyContent="center" mt={20} mb={8}>

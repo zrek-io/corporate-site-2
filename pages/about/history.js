@@ -1,9 +1,11 @@
 import { Box, Text } from "@chakra-ui/layout";
 import { Hero } from "../../src/components/organisations/Hero";
+import { Header } from '../src/components/organisations/Header'
 
 export default function History() {
   return (
     <Box>
+      <Header />
       <Hero title="沿革" />
       <Box w="60%" mx="auto" my={16}>
         <Box display="flex">

@@ -1,10 +1,12 @@
 import { Box } from "@chakra-ui/layout"
 import { Table, Tbody, Tr, Td } from "@chakra-ui/table";
 import { Hero } from '../../src/components/organisations/Hero';
+import { Header } from '../src/components/organisations/Header'
 
 export default function Recruit() {
   return (
     <Box>
+      <Header />
       <Hero title="会社概要" />
       <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="60%" mx="auto" mt={32}>
         <Table variant="simple" size="lg">

@@ -1,9 +1,13 @@
 import { Box, Text } from '@chakra-ui/react';
 import { SectionTitle } from '../../src/components/moclules/SectionTitle';
 import { Hero } from '../../src/components/organisations/Hero';
+import { Header } from '../src/components/organisations/Header'
 // import GoogleMapReact from 'google-map-react';
 
 export default function Access() {
+  // const env = process.env
+  // console.log(env.NEXT_PUBLIC_TEST)
+
   // const defaultProps = {
   //   center: {
   //     lat: 10.99835602,
@@ -14,6 +18,7 @@ export default function Access() {
 
   return (
     <Box>
+      <Header />
       <Hero title="アクセス" />
       <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="60%" mx="auto" mt={32}>
         <Box w="100%" mb={20}>
@@ -26,11 +31,10 @@ export default function Access() {
         </Box>
         <Box w="100%" mb={20}>
           <SectionTitle SectionTitle="アクセス" />
-          <Text>ここに地図</Text>
         </Box>
-        {/* <Box h="100%">
+        {/* <Box w="100%" h="70vh">
           <GoogleMapReact
-            bootstrapURLKeys={{ key: "" }}
+            bootstrapURLKeys={{ key: process.env.GOOGLE_MAP_API_KEY }}
             defaultCenter={defaultProps.center}
             defaultZoom={defaultProps.zoom}
           />

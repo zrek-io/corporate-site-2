@@ -9,10 +9,12 @@ import {
 } from "@chakra-ui/react"
 import { Hero } from "../src/components/organisations/Hero"
 import { PrimaryButton } from "../src/components/atoms/PrimaryButton"
+import { Header } from '../src/components/organisations/Header'
 
 export default function Contact() {
   return (
     <Box>
+      <Header />
       <Hero title="問い合わせ" />
       <Box as="main" w="60%" mx="auto" my={20}>
         <Box>

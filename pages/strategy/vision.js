@@ -1,9 +1,11 @@
 import { Box, Heading, Text } from "@chakra-ui/layout"
 import { Hero } from "../../src/components/organisations/Hero"
+import { Header } from '../src/components/organisations/Header'
 
 export default function Vision() {
   return (
     <Box>
+      <Header />
       <Hero title="ビジョン" />
       <Box as="main" w="60%" mx="auto">
         <Box my={12}>

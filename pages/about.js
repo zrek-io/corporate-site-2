@@ -1,10 +1,12 @@
 import { Box } from "@chakra-ui/layout"
 import { Card } from "../src/components/moclules/Card"
 import { Hero } from "../src/components/organisations/Hero"
+import { Header } from "../src/components/organisations/Header"
 
 export default function About() {
   return (
-    <Box>
+    <Box pos="relative">
+      <Header />
       <Hero title="企業情報" />
       <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="73%" mx="auto" mt={32}>
         <Card title="会社概要" explain="ゼットレックについての基本情報です。" width="30%" />

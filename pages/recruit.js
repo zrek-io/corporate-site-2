@@ -2,10 +2,12 @@ import { Box, Center, Text } from "@chakra-ui/layout"
 import { Hero } from "../src/components/organisations/Hero"
 import { SectionTitle } from '../src/components/moclules/SectionTitle';
 import { PrimaryButton } from '../src/components/atoms/PrimaryButton';
+import { Header } from '../src/components/organisations/Header'
 
 export default function Recruit() {
   return (
     <Box>
+      <Header />
       <Hero title="採用情報" />
       <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="73%" mx="auto" mt={32}>
         <Box w="100%" mb={20}>

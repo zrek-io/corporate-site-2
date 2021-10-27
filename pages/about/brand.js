@@ -4,10 +4,12 @@ import { SectionTitle } from '../../src/components/moclules/SectionTitle';
 import { Image } from "@chakra-ui/image";
 import LogoCharacter from "../../src/static/logo_character.png"
 import LogoImage from "../../src/static/logo.png"
+import { Header } from '../src/components/organisations/Header'
 
 export default function Brand() {
   return (
     <Box>
+      <Header />
       <Hero title="ブランド" />
       <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="73%" mx="auto" mt={32}>
         <Box w="100%" mb={20}>

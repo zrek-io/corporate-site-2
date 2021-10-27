@@ -9,6 +9,7 @@ export const Hero = (props) => {
       alignItems="center"
       justifyContent="center"
       h={60}
+      mt={28}
       bgGradient="linear(to-b, primary.250, primary.300)"
       textAlign="center"
     >

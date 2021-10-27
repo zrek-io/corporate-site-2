@@ -1,9 +1,11 @@
 import { Box, Text } from "@chakra-ui/layout"
 import { Hero } from "../../src/components/organisations/Hero"
+import { Header } from '../src/components/organisations/Header'
 
 export default function Message() {
   return (
     <Box>
+      <Header />
       <Hero title="トップメッセージ" />
       <Box as="main" w="60%" mx="auto">
         <Box w="100%">
