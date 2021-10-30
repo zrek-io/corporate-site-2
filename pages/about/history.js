@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/layout";
 import { Hero } from "../../src/components/organisations/Hero";
-import { Header } from '../src/components/organisations/Header'
+import { Header } from '../../src/components/organisations/Header'
 
 export default function History() {
   return (

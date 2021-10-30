@@ -93,7 +93,7 @@ export default function Contact() {
         </Box>
         <Box textAlign="center">
           <Text>
-            お問い合わせには、
+            お問い合わせには、{" "}
             <NextLink href="/privacy_policy" passHref>
               <Link textDecoration="underline">個人情報保護方針</Link>
             </NextLink>

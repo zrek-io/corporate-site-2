@@ -1,9 +1,9 @@
 import { Box } from "@chakra-ui/layout"
 import { Table, Tbody, Tr, Td } from "@chakra-ui/table";
 import { Hero } from '../../src/components/organisations/Hero';
-import { Header } from '../src/components/organisations/Header'
+import { Header } from '../../src/components/organisations/Header'
 
-export default function Recruit() {
+export default function Company() {
   return (
     <Box>
       <Header />
