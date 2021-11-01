@@ -8,9 +8,31 @@ import { NavmenuService } from './NavMenuItem/NavmenuService';
 import { useState } from 'react';
 
 export const Header = () => {
-  const [isHover, setIsHover] = useState();
-  const onMouseEnter = () => {
-    setIsHover(false)
+  const [ aboutIsHover, setAboutIsHover ] = useState(false);
+  const onMouseAbout = () => {
+    setAboutIsHover(true)
+    setStrategyIsHover(false)
+    setServiceIsHover(false)
+  }
+
+  const [ strategyIsHover, setStrategyIsHover ] = useState(false)
+  const onMouseStrategy = () => {
+    setStrategyIsHover(true)
+    setAboutIsHover(false)
+    setServiceIsHover(false)
+  }
+
+  const [ serviceIsHover, setServiceIsHover ] = useState(false)
+  const onMouseService = () => {
+    setServiceIsHover(true)
+    setAboutIsHover(false)
+    setStrategyIsHover(false)
+  }
+
+  const onMouseLeave = () => {
+    setAboutIsHover(false)
+    setStrategyIsHover(false)
+    setServiceIsHover(false)
   }
 
   return (
@@ -24,23 +46,32 @@ export const Header = () => {
           </NextLink>
         </Box>
         <UnorderedList display="flex" w="60%" alignItems="center" justifyContent="space-around" listStyleType="none">
-          <ListItem>
-            <NavmenuAbout />
+          <ListItem onMouseEnter={onMouseAbout}>
+            <NextLink href="/about" passHref>
+              <Link _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>企業情報</Link>
+            </NextLink>
+            <NavmenuAbout visibility={!aboutIsHover ? "hidden" : "visible"} opacity={!aboutIsHover ? "0" : "1"} onMouseLeave={onMouseLeave} />
           </ListItem>
-          <ListItem>
-            <NavmenuStrategy />
+          <ListItem onMouseEnter={onMouseStrategy}>
+            <NextLink href="/strategy" passHref>
+              <Link _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>経営方針</Link>
+            </NextLink>
+            <NavmenuStrategy visibility={!strategyIsHover ? "hidden" : "visible"} opacity={!strategyIsHover ? "0" : "1"} onMouseLeave={onMouseLeave} />
           </ListItem>
-          <ListItem>
-            <NavmenuService />
+          <ListItem onMouseEnter={onMouseService}>
+            <NextLink href="/service" passHref>
+              <Link _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>事業内容</Link>
+            </NextLink>
+            <NavmenuService visibility={!serviceIsHover ? "hidden" : "visible"} opacity={!serviceIsHover ? "0" : "1"} onMouseLeave={onMouseLeave} />
           </ListItem>
           <ListItem>
             <NextLink href="/news" passHref>
-              <Link onMouseEnter={onMouseEnter}>ニュース</Link>
+              <Link onMouseEnter={onMouseLeave}>ニュース</Link>
             </NextLink>
           </ListItem>
           <ListItem>
             <NextLink href="/recruit" passHref>
-              <Link onMouseEnter={onMouseEnter}>採用情報</Link>
+              <Link onMouseEnter={onMouseLeave}>採用情報</Link>
             </NextLink>
           </ListItem>
           <SecondaryButton title="問い合わせ" width="13%" />
