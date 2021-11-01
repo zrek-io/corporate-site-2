@@ -1,13 +1,16 @@
 import { Box, Text, Heading, OrderedList, ListItem } from "@chakra-ui/layout";
 import { Hero } from "../src/components/organisations/Hero";
 import { Header } from '../src/components/organisations/Header'
+import { Footer } from '../src/components/organisations/Footer'
+import { Meta } from "../src/components/moclules/Meta"
 
 export default function Antisocial() {
   return (
     <Box>
+      <Meta pageTitle="反社会的勢力に対する基本方針" />
       <Header />
       <Hero title="反社会的勢力に対する基本方針" />
-      <Box as="main" w="60%" mx="auto">
+      <Box as="main" w="60%" mx="auto" my={20}>
         <Box mt={12} mb={20}>
           <Text>当社は、反社会的勢力に対する基本方針を以下の通り定め、組織が一体となって対応し、健全な企業活動に努めます。社会的秩序や、企業活動に悪影響を与える反社会的勢力である、あらゆる個人・団体とは一切関わりません。反社会的勢力との取引の未然防止に努めるとともに、取引開始後に相手方が反社会的勢力であることが判明した場合には、外部専門機関と連携の上、適切に対応します。</Text>
         </Box>
@@ -29,6 +32,7 @@ export default function Antisocial() {
           </Box>
         </Box>
       </Box>
+      <Footer />
     </Box>
   )
 }

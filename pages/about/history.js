@@ -1,10 +1,13 @@
 import { Box, Text } from "@chakra-ui/layout";
 import { Hero } from "../../src/components/organisations/Hero";
 import { Header } from '../../src/components/organisations/Header'
+import { Footer } from '../../src/components/organisations/Footer'
+import { Meta } from "../../src/components/moclules/Meta"
 
 export default function History() {
   return (
     <Box>
+      <Meta pageTitle="沿革" pageDescription="ゼットレックの歩みを記載しています。" />
       <Header />
       <Hero title="沿革" />
       <Box w="60%" mx="auto" my={16}>
@@ -37,7 +40,7 @@ export default function History() {
                 height: "1rem",
                 backgroundColor: "primary.200",
                 borderRadius: "50%",
-                zIndex: "100"
+                zIndex: "70"
               }}
             >
               2021年9月
@@ -126,6 +129,7 @@ export default function History() {
           </Box>
         </Box>
       </Box>
+      <Footer />
     </Box>
   )
 }

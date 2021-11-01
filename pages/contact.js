@@ -10,10 +10,13 @@ import {
 import { Hero } from "../src/components/organisations/Hero"
 import { PrimaryButton } from "../src/components/atoms/PrimaryButton"
 import { Header } from '../src/components/organisations/Header'
+import { Footer } from '../src/components/organisations/Footer'
+import { Meta } from "../src/components/moclules/Meta"
 
 export default function Contact() {
   return (
     <Box>
+      <Meta pageTitle="問い合わせ" />
       <Header />
       <Hero title="問い合わせ" />
       <Box as="main" w="60%" mx="auto" my={20}>
@@ -102,6 +105,7 @@ export default function Contact() {
           <PrimaryButton title="同意の上、入力内容を送信" width="30%" margin="8" />
         </Box>
       </Box>
+      <Footer />
     </Box>
   )
 }

@@ -2,6 +2,8 @@ import { Box, Text } from '@chakra-ui/react';
 import { SectionTitle } from '../../src/components/moclules/SectionTitle';
 import { Hero } from '../../src/components/organisations/Hero';
 import { Header } from '../../src/components/organisations/Header'
+import { Footer } from '../../src/components/organisations/Footer'
+import { Meta } from "../../src/components/moclules/Meta"
 // import GoogleMapReact from 'google-map-react';
 
 export default function Access() {
@@ -18,9 +20,10 @@ export default function Access() {
 
   return (
     <Box>
+      <Meta pageTitle="アクセス" pageDescription="本社までのアクセス情報を記載しています。" />
       <Header />
       <Hero title="アクセス" />
-      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="60%" mx="auto" mt={32}>
+      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="60%" mx="auto" my={32}>
         <Box w="100%" mb={20}>
           <SectionTitle SectionTitle="所在地" />
           <Text>〒248-0007 神奈川県鎌倉市大町1丁目1-14 HATSU鎌倉</Text>
@@ -40,6 +43,7 @@ export default function Access() {
           />
         </Box> */}
       </Box>
+      <Footer />
     </Box>
   )
 }

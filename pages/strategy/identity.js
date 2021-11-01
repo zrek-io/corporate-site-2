@@ -1,10 +1,13 @@
 import { Box,Heading } from "@chakra-ui/layout";
 import { Hero } from "../../src/components/organisations/Hero";
-import { Header } from '../src/components/organisations/Header'
+import { Header } from '../../src/components/organisations/Header'
+import { Footer } from '../../src/components/organisations/Footer'
+import { Meta } from "../../src/components/moclules/Meta"
 
 export default function Identity() {
   return (
     <Box>
+      <Meta pageTitle="経営理念" pageDescription="ゼットレックの経営理念です。" />
       <Header />
       <Hero title="経営理念" />
       <Box as="main" w="60%" mx="auto">
@@ -12,6 +15,7 @@ export default function Identity() {
           <Heading as="h1" size="lg">士魂商才、人間尊重</Heading>
         </Box>
       </Box>
+      <Footer />
     </Box>
   )
 }

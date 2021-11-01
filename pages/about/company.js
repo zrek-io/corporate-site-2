@@ -2,13 +2,16 @@ import { Box } from "@chakra-ui/layout"
 import { Table, Tbody, Tr, Td } from "@chakra-ui/table";
 import { Hero } from '../../src/components/organisations/Hero';
 import { Header } from '../../src/components/organisations/Header'
+import { Footer } from '../../src/components/organisations/Footer'
+import { Meta } from "../../src/components/moclules/Meta"
 
 export default function Company() {
   return (
     <Box>
+      <Meta pageTitle="会社概要" pageDescription="ゼットレックについての基本情報です。" />
       <Header />
       <Hero title="会社概要" />
-      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="60%" mx="auto" mt={32}>
+      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="60%" mx="auto" my={32}>
         <Table variant="simple" size="lg">
           <Tbody>
             <Tr>
@@ -58,6 +61,7 @@ export default function Company() {
           </Tbody>
         </Table>
       </Box>
+      <Footer />
     </Box>
   )
 }

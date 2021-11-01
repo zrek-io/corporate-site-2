@@ -1,13 +1,16 @@
 import { Box, Text, Heading, OrderedList, ListItem } from "@chakra-ui/layout";
 import { Hero } from "../src/components/organisations/Hero";
 import { Header } from '../src/components/organisations/Header'
+import { Footer } from '../src/components/organisations/Footer'
+import { Meta } from "../src/components/moclules/Meta"
 
 export default function PrivacyPolicy() {
   return (
     <Box>
+      <Meta pageTitle="個人情報保護方針" />
       <Header />
       <Hero title="個人情報保護方針" />
-      <Box as="main" w="60%" mx="auto">
+      <Box as="main" w="60%" mx="auto" my={20}>
         <Box mt={12} mb={20}>
           <Text>当社は、個人情報保護を企業における重要な社会的使命・責務と認識しております。そこで、当社が保有するお客様の個人情報を適切に管理運用するために遵守するべき基本事項として個人情報保護方針（以下「本方針」といいます）を定めます。</Text>
         </Box>
@@ -51,6 +54,7 @@ export default function PrivacyPolicy() {
           </Box>
         </Box>
       </Box>
+      <Footer />
     </Box>
   )
 }

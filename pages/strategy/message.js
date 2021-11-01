@@ -1,13 +1,16 @@
 import { Box, Text } from "@chakra-ui/layout"
 import { Hero } from "../../src/components/organisations/Hero"
-import { Header } from '../src/components/organisations/Header'
+import { Header } from '../../src/components/organisations/Header'
+import { Footer } from '../../src/components/organisations/Footer'
+import { Meta } from "../../src/components/moclules/Meta"
 
 export default function Message() {
   return (
     <Box>
+      <Meta pageTitle="トップメッセージ" pageDescription="ゼットレックのトップメッセージです。" />
       <Header />
       <Hero title="トップメッセージ" />
-      <Box as="main" w="60%" mx="auto">
+      <Box as="main" w="60%" mx="auto" my={20}>
         <Box w="100%">
           <Box mt={12} mb={20}>
             <Text>
@@ -43,6 +46,7 @@ export default function Message() {
           </Box>
         </Box>
       </Box>
+      <Footer />
     </Box>
   )
 }

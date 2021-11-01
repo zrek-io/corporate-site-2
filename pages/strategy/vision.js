@@ -1,14 +1,17 @@
 import { Box, Heading, Text } from "@chakra-ui/layout"
 import { Hero } from "../../src/components/organisations/Hero"
-import { Header } from '../src/components/organisations/Header'
+import { Header } from '../../src/components/organisations/Header'
+import { Footer } from '../../src/components/organisations/Footer'
+import { Meta } from "../../src/components/moclules/Meta"
 
 export default function Vision() {
   return (
     <Box>
+      <Meta pageTitle="ビジョン" pageDescription="ゼットレックのバリュー、パーパス、ミッションについて記載しています。" />
       <Header />
       <Hero title="ビジョン" />
       <Box as="main" w="60%" mx="auto">
-        <Box my={12}>
+        <Box my={20}>
           <Heading as="h1" size="lg">Value Statement</Heading>
           <Text my={4}>
             我々の仕事は、最高のものを創ることだ。
@@ -35,6 +38,7 @@ export default function Vision() {
           <Text my={4}>2024年までに優れたシステムを確立させ、Sustainability × Digital分野のニッチ市場において唯一無二の存在となる。</Text>
         </Box>
       </Box>
+      <Footer />
     </Box>
   )
 }

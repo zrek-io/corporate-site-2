@@ -1,13 +1,16 @@
 import { Box, Text, Heading, OrderedList, ListItem } from "@chakra-ui/layout";
 import { Hero } from "../src/components/organisations/Hero";
 import { Header } from '../src/components/organisations/Header'
+import { Footer } from '../src/components/organisations/Footer'
+import { Meta } from "../src/components/moclules/Meta"
 
 export default function TermsOfService() {
   return (
     <Box>
+      <Meta pageTitle="サイト利用規約" />
       <Header />
       <Hero title="サイト利用規約" />
-      <Box as="main" w="60%" mx="auto">
+      <Box as="main" w="60%" mx="auto" my={20}>
         <Box mt={12} mb={20}>
           <Text>本ウェブサイトは、株式会社Zrek（以下「当社」といいます）が運営しています。本ウェブサイトを利用する場合、サイト利用規約（以下、本規約）が適用されますので、本規約に同意した上で、ご利用ください。なお、予告なく本規約が変更されることがあります。</Text>
         </Box>
@@ -42,6 +45,7 @@ export default function TermsOfService() {
           </Box>
         </Box>
       </Box>
+      <Footer />
     </Box>
   )
 }

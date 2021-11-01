@@ -9,6 +9,7 @@ import { Header } from '../src/components/organisations/Header'
 import { NewsItem } from '../src/components/moclules/NewsItem';
 import { useRouter } from 'next/router'
 import { Footer } from '../src/components/organisations/Footer'
+import { Meta } from "../src/components/moclules/Meta"
 
 export default function Home() {
   const router = useRouter()
@@ -27,6 +28,7 @@ export default function Home() {
 
   return (
     <Box>
+      <Meta />
       <Header />
       <Box
         pos="relative"
@@ -41,6 +43,7 @@ export default function Home() {
           top="50%"
           left="5%"
           w="50%"
+          alt="スローガン"
         />
       </Box>
       <Box as="main" w="100%">
@@ -70,7 +73,7 @@ export default function Home() {
               </Box>
             </Box>
             <Box w="45%">
-              <Image src={HomeServiceImage.src} />
+              <Image src={HomeServiceImage.src} alt="Zrekの提供サービス" />
             </Box>
           </Box>
         </Box>

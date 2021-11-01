@@ -6,6 +6,7 @@ import { NavmenuAbout } from './NavMenuItem/NavmenuAbout';
 import { NavmenuStrategy } from './NavMenuItem/NavmenuStrategy';
 import { NavmenuService } from './NavMenuItem/NavmenuService';
 import { useState } from 'react';
+import { useRouter } from 'next/router'
 
 export const Header = () => {
   const [ aboutIsHover, setAboutIsHover ] = useState(false);
@@ -34,6 +35,9 @@ export const Header = () => {
     setStrategyIsHover(false)
     setServiceIsHover(false)
   }
+
+  const router = useRouter()
+  const onClickContact = () => router.push('/contact')
 
   return (
     <>
@@ -74,7 +78,7 @@ export const Header = () => {
               <Link onMouseEnter={onMouseLeave}>採用情報</Link>
             </NextLink>
           </ListItem>
-          <SecondaryButton title="問い合わせ" width="13%" />
+          <SecondaryButton title="問い合わせ" width="13%" onClick={onClickContact} />
         </UnorderedList>
       </Flex>
     </>
