@@ -4,20 +4,8 @@ import { Hero } from '../../src/components/organisations/Hero';
 import { Header } from '../../src/components/organisations/Header'
 import { Footer } from '../../src/components/organisations/Footer'
 import { Meta } from "../../src/components/moclules/Meta"
-// import GoogleMapReact from 'google-map-react';
 
 export default function Access() {
-  // const env = process.env
-  // console.log(env.NEXT_PUBLIC_TEST)
-
-  // const defaultProps = {
-  //   center: {
-  //     lat: 10.99835602,
-  //     lng: 77.01502627
-  //   },
-  //   zoom: 11
-  // };
-
   return (
     <Box>
       <Meta pageTitle="アクセス" pageDescription="本社までのアクセス情報を記載しています。" />
@@ -32,16 +20,12 @@ export default function Access() {
           <SectionTitle SectionTitle="交通手段" />
           <Text>JR鎌倉駅東口 徒歩5分</Text>
         </Box>
-        <Box w="100%" mb={20}>
+        <Box w="100%" mb={2}>
           <SectionTitle SectionTitle="アクセス" />
         </Box>
-        {/* <Box w="100%" h="70vh">
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: process.env.GOOGLE_MAP_API_KEY }}
-            defaultCenter={defaultProps.center}
-            defaultZoom={defaultProps.zoom}
-          />
-        </Box> */}
+        <Box w="80%" h="65vh" mx="auto">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13022.420821146547!2d139.5512588!3d35.31579!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeaa39e41935d0a9d!2zSEFUU1XpjozlgIk!5e0!3m2!1sja!2sjp!4v1635839508625!5m2!1sja!2sjp" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+        </Box>
       </Box>
       <Footer />
     </Box>
