@@ -1,9 +1,14 @@
 import { Button } from "@chakra-ui/button"
+import { Link } from "@chakra-ui/layout";
+import { NextLink } from 'next/link';
 
 export const BorderButton = (props) => {
-  const { title, width } = props
+  const { title, width, onClick } = props
 
   return (
+    // <NextLink href="/" passHref>
+    //   <Link w={width}>{title}</Link>
+    // </NextLink>
     <Button
       w={width}
       border="1px"
@@ -19,6 +24,7 @@ export const BorderButton = (props) => {
         transition: ".5s"
       }}
       _focus={{ focus: "none" }}
+      onClick={onClick}
     >
       {title}
     </Button>

@@ -14,6 +14,7 @@ import { useRouter } from 'next/router'
 export default function ClimateChange() {
   const router = useRouter()
   const onClickContact = () => router.push('/contact')
+  const onClickMore = () => router.push('http://lp.z-rek.com/')
 
   return (
     <Box>
@@ -36,7 +37,7 @@ export default function ClimateChange() {
         </Box>
         <Box p={12} textAlign="center">
           <PrimaryButton title="問い合わせ" width="17%" margin="8" onClick={onClickContact} />
-          <BorderButton title="もっと詳しく" width="17%" />
+          <BorderButton title="もっと詳しく" width="17%" onClick={onClickMore} />
         </Box>
       </Box>
       <Footer />

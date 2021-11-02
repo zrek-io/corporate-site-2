@@ -42,6 +42,13 @@ export const theme = extendTheme({
         fontSize: "md",
         lineHeight: "8"
       }
+    },
+    Link: {
+      baseStyle: {
+        _focus: {
+          boxShadow: "none"
+        }
+      }
     }
   },
   colors: {

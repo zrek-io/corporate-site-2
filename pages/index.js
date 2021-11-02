@@ -26,6 +26,10 @@ export default function Home() {
     router.push('/news')
   }
 
+  const onClickMore = () => {
+    router.push('http://lp.z-rek.com/')
+  }
+
   return (
     <Box>
       <Meta />
@@ -69,7 +73,7 @@ export default function Home() {
               <Text py={8}>後世まで綺麗な地球を残すため、勇気を振り絞って、それぞれが小さなアクションを起こすことが大切です。それが私たちの責任であり、良い未来を築くために必要不可欠なことです。ゼットレっくは、そんな勇気ある人々を支援するために全力を尽くして、共に世界を前進させていきます。</Text>
               <Box display="flex" w="100%" justifyContent="space-evenly">
                 <PrimaryButton title='事業内容' width="35%" onClick={onClickToServices} />
-                <BorderButton title='もっと詳しく'　width="35%" />
+                <BorderButton title='もっと詳しく' width="35%" onClick={onClickMore} />
               </Box>
             </Box>
             <Box w="45%">
