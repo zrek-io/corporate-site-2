@@ -6,8 +6,8 @@ import NextLink from "next/link"
 export const Footer = () => {
   return (
     <Box w="100%" bgColor="primary.100">
-      <Box display="flex" justifyContent="space-around" w="80%" mx="auto" py={4}>
-        <Box w="15%">
+      <Box display={{ sm: 'none', lg: "flex" }} justifyContent="space-around" flexWrap='wrap' w="80%" mx="auto" py={4}>
+        <Box w={{ sm: '70%', lg: "15%" }}>
           <Box py={4}>
             <NextLink href="/" passHref>
               <Link _hover={{ textDecoration: "none" }}>
@@ -50,7 +50,7 @@ export const Footer = () => {
           </Box>
         </Box>
 
-        <Box w="15%">
+        <Box w={{ sm: '70%', lg: "15%" }}>
           <Box py={4}>
             <NextLink href="/strategy" passHref>
               <Link _hover={{ textDecoration: "none" }}>
@@ -78,7 +78,7 @@ export const Footer = () => {
           </Box>
         </Box>
 
-        <Box w="15%">
+        <Box w={{ sm: '70%', lg: "15%" }}>
           <Box py={4}>
             <NextLink href="/service" passHref>
               <Link _hover={{ textDecoration: "none" }}>
@@ -106,7 +106,7 @@ export const Footer = () => {
           </Box>
         </Box>
 
-        <Box w="15%">
+        <Box w={{ sm: '70%', lg: "15%" }}>
           <Box py={4}>
             <NextLink href="/news" passHref>
               <Link _hover={{ textDecoration: "none" }}>
@@ -134,18 +134,18 @@ export const Footer = () => {
         </Box>
 
       </Box>
-      <Box display="flex" alignItems="center" justifyContent="space-around" w="40%" mx="auto" py={8}>
-        <NextLink href="/terms_of_service" passHref>
+      <Box display="flex" alignItems="center" justifyContent="space-around" flexWrap='wrap' w={{ sm: '90%', lg: "40%" }} mx="auto" py={8}>
+        <NextLink href="/terms_of_service" passHref w={{ sm: '100%', lg: '30%' }}>
           <Link fontSize="xs">サイト利用規約</Link>
         </NextLink>
-        <NextLink href="/privacy_policy" passHref>
+        <NextLink href="/privacy_policy" passHref w={{ sm: '100%', lg: '30%' }}>
           <Link fontSize="xs">個人情報保護方針</Link>
         </NextLink>
-        <NextLink href="/antisocial" _focus={{ outline: "none" }} passHref>
+        <NextLink href="/antisocial" passHref w={{ sm: '100%', lg: '30%' }}>
           <Link fontSize="xs">反社会的勢力に対する基本方針</Link>
         </NextLink>
       </Box>
-      <Box display="flex" alignItems="center" justifyContent="space-around" w="8%" mx="auto" py={2}>
+      <Box display="flex" alignItems="center" justifyContent="space-around" w={{ sm: '30%', lg: "8%" }} mx="auto" py={2}>
         <Link href="https://www.facebook.com/zrek.inc/?ref=page_internal">
           <FaFacebook size="2rem" cursor="pointer" /> 
         </Link>

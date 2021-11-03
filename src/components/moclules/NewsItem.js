@@ -4,16 +4,16 @@ export const NewsItem = (props) => {
   const { date, tag, title } = props;
 
   return (
-    <Box w="80%" mx="auto">
-      <Box display="flex" alignItem="center" justifyContent="space-between" w="100%">
-        <Box w="10%">
-          <Text>{date}</Text>
+    <Box w={{ sm: '100%', lg: "80%" }} mx="auto">
+      <Box display="flex" alignItem="center" justifyContent={{ sm: 'flex-start', lg: "space-between" }} flexWrap='wrap' w="100%">
+        <Box w={{ sm: '25%', lg: "10%" }}>
+          <Text fontSize={{ sm: 'xs', lg: 'md' }}>{date}</Text>
         </Box>
-        <Box w="17%" bgColor="primary.200" textAlign="center" color="primary.50">
-          <Text>{tag}</Text>
+        <Box w={{ sm: '30%', lg: "17%" }} bgColor="primary.200" textAlign="center" color="primary.50">
+          <Text fontSize={{ sm: 'xs', lg: 'md' }}>{tag}</Text>
         </Box>
-        <Box w="65%">
-          <Text>{title}</Text>
+        <Box w={{ sm: '100%', lg: "65%" }}>
+          <Text fontSize={{ sm: 'xs', lg: 'md' }}>{title}</Text>
         </Box>
       </Box>
       <Divider my={4} borderColor="primary.150" />

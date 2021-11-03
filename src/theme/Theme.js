@@ -34,22 +34,22 @@ export const theme = extendTheme({
       sizes: {
         // as='h3'
         sm: {
-          fontSize: '2xl'
+          fontSize: { sm: 'lg', lg: '2xl'}
         },
         // as='h2'
         md: {
-          fontSize: '3xl'
+          fontSize: { sm: 'xl', lg: '3xl' }
         },
         // as='h1'
         xl: {
-          fontSize: '4xl'
+          fontSize: { sm: '2xl', lg: '4xl' }
         }
       }
     },
     Text: {
       baseStyle: {
-        fontSize: 'md',
-        lineHeight: '8'
+        fontSize: { sm: 'xs', lg: 'md' },
+        lineHeight: { sm: '6', lg: '8' }
       }
     },
     Link: {

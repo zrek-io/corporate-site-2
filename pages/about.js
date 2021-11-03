@@ -18,11 +18,11 @@ export default function About() {
       <Meta pageTitle="企業情報" />
       <Header />
       <Hero title="企業情報" />
-      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="73%" mx="auto" my={32}>
-        <Card title="会社概要" explain="ゼットレックについての基本情報です。" width="30%" onClick={onClickCompany} />
-        <Card title="沿革" explain="ゼットレックの歩みを記載しています。" width="30%" onClick={onClickHistory} />
-        <Card title="アクセス" explain="本社までのアクセス情報を記載しています。" width="30%" onClick={onClickAccess} />
-        <Card title="ブランド" explain="ゼットレックの社名由来、ロゴ、カラーについて記載しています。" width="30%" onClick={onClickBrand} />
+      <Box as="main" display="flex" flexWrap="wrap" justifyContent={{ sm: 'center', lg: "space-between" }} w="73%" mx="auto" my={{ sm: 16, lg: 32 }}>
+        <Card title="会社概要" explain="ゼットレックについての基本情報です。" width={{ sm: '100%', lg: "30%" }} onClick={onClickCompany} />
+        <Card title="沿革" explain="ゼットレックの歩みを記載しています。" width={{ sm: '100%', lg: "30%" }} onClick={onClickHistory} />
+        <Card title="アクセス" explain="本社までのアクセス情報を記載しています。" width={{ sm: '100%', lg: "30%" }} onClick={onClickAccess} />
+        <Card title="ブランド" explain="ゼットレックの社名由来、ロゴ、カラーについて記載しています。" width={{ sm: '100%', lg: "30%" }} onClick={onClickBrand} />
       </Box>
       <Footer />
     </Box>

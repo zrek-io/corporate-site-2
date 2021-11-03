@@ -14,11 +14,11 @@ export default function Brand() {
       <Meta pageTitle="ブランド" pageDescription="ゼットレックの社名由来、ロゴ、カラーについて記載しています。" />
       <Header />
       <Hero title="ブランド" />
-      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="73%" mx="auto" my={32}>
+      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w={{ sm: '90%', lg: "73%" }} mx="auto" my={{ sm: 16, lg: 32 }}>
         <Box w="100%" mb={20}>
           <SectionTitle SectionTitle="社名" />
-          <Image src={LogoCharacter.src} w="28%" mx="auto" py={14} alt="Zrek文字ロゴ" />
-          <Box w="60%" mx="auto" lineHeight={8}>
+          <Image src={LogoCharacter.src} w={{ sm: '50%', lg: "28%" }} mx="auto" py={{ sm: 4, lg: 14 }} alt="Zrek文字ロゴ" />
+          <Box w={{ sm: '85%', lg: "60%" }} mx="auto" lineHeight={8}>
             <Text py={5}>「Z」と「Trek」の造語です。</Text>
             <Text py={5}>
               「Z」は、アルファベットの最終文字且つ最も希少で使われない文字とされています。最後まで、最高のといった意味があります。
@@ -32,8 +32,8 @@ export default function Brand() {
         </Box>
         <Box w="100%" mb={20}>
           <SectionTitle SectionTitle="ロゴ" />
-          <Image src={LogoImage.src} w="15%" mx="auto" py={14} alt="Zrekロゴ" />
-          <Box w="60%" mx="auto" lineHeight={8}>
+          <Image src={LogoImage.src} w={{ sm: '30%', lg: "15%" }} mx="auto" py={{ sm: 4 ,lg: 14 }} alt="Zrekロゴ" />
+          <Box w={{ sm: '85%', lg: "60%" }} mx="auto" lineHeight={8}>
             <Text py={5}>社名の「ゼットレック」に相応しいロゴとして考えられました。</Text>
             <Text py={5}>ロゴのモチーフとなったのは、地球上で最も長距離の渡りをする鳥の一つとして知られているキョクアジサシです。キョクアジサシは、チドリ目のカモメ科に分類される鳥類の一種で、1年のうちに北極圏と南極圏の間を往き来する鳥です。</Text>
             <Text py={5}>どんな困難があろうとも、誰よりも遠くまで飛ぶことをイメージして、デザインされました。</Text>
@@ -43,10 +43,10 @@ export default function Brand() {
         <Box w="100%" mb={20}>
           <SectionTitle SectionTitle="カラー" />
           <Box display="flex" alignItem="center" justifyContent="space-evenly" w="100%" my={6}>
-            <Box w={72} h={28} bgColor="primary.200"></Box>
-            <Box w={72} h={28} bgColor="primary.350"></Box>
+            <Box w={{ sm: 36, lg: 72 }} h={{ sm: 14, lg: 28 }} bgColor="primary.200"></Box>
+            <Box w={{ sm: 36, lg: 72 }} h={{ sm: 14, lg: 28 }} bgColor="primary.350"></Box>
           </Box>
-          <Box w="60%" mx="auto" lineHeight={8}>
+          <Box w={{ sm: '85%', lg: "60%" }} mx="auto" lineHeight={8}>
             <Text py={5}>ゼットレックカラーは、青で統一されています。クールさとシンプルさがあるカラーとして選ばれ、ロゴと組み合わせたときのストーリー性を追求したカラーとなっています。</Text>
           </Box>
         </Box>

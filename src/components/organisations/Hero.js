@@ -8,8 +8,8 @@ export const Hero = (props) => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      h={60}
-      mt={28}
+      h={{ sm: '40', lg: '60' }}
+      mt={{ sm: '20', md: '28' }}
       bgGradient="linear(to-b, primary.250, primary.300)"
       textAlign="center"
     >
