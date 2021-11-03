@@ -17,10 +17,10 @@ export default function Service() {
       <Meta pageTitle="事業内容" />
       <Header />
       <Hero title="事業内容" />
-      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="73%" mx="auto" my={32}>
-        <Card title="気候変動対策" explain="ゼットレックは気候変動に対する対策事業を展開しています。" width="30%" onClick={onClickClimateChange} />
-        <Card title="ソフトウェア開発" explain="ゼットレックはソフトウェアの受託開発を行なっています。" width="30%" onClick={onClickSoftware} />
-        <Card title="研究開発" explain="ゼットレックでは新しいテクノロジーの社会実装に向けた研究開発を行なっています。" width="30%" onClick={onClickResearchAndDevelopment} />
+      <Box as="main" display="flex" flexWrap="wrap" justifyContent={{ sm: 'center', md: 'space-between', lg: "space-between" }} w="73%" mx="auto" my={{ sm: 16, lg: 32 }}>
+        <Card title="気候変動対策" explain="ゼットレックは気候変動に対する対策事業を展開しています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickClimateChange} />
+        <Card title="ソフトウェア開発" explain="ゼットレックはソフトウェアの受託開発を行なっています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickSoftware} />
+        <Card title="研究開発" explain="ゼットレックでは新しいテクノロジーの社会実装に向けた研究開発を行なっています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickResearchAndDevelopment} />
       </Box>
       <Footer />
     </Box>

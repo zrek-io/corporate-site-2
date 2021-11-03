@@ -37,7 +37,7 @@ export default function Home() {
       <Box
         pos="relative"
         w="100%"
-        h={{ sm: '80vh', lg: '100vh' }}
+        h={{ sm: '80vh', md: '60vh', lg: '100vh' }}
         bgImage={HeroBackgroundImage.src}
         bgSize="cover"
       >
@@ -46,12 +46,12 @@ export default function Home() {
           pos="absolute"
           top="50%"
           left="5%"
-          w={{ sm: '90%', lg: '50%'}}
+          w={{ sm: '90%', md: '60%', lg: '50%'}}
           alt="スローガン"
         />
       </Box>
       <Box as="main" w="100%">
-        <Box as="section" w={{sm: '90%', lg: "60%"}} mx="auto" my={16} textAlign="center">
+        <Box as="section" w={{sm: '90%', md: '80%', lg: "60%"}} mx="auto" my={16} textAlign="center">
           <Box py={[8, 12]}>
             <Heading as="h1" size="xl">ゼットレックとは</Heading>
             <Heading as="h2" size="md" pt={4}>About us</Heading>
@@ -59,7 +59,7 @@ export default function Home() {
           <Box>
             <Text>ゼットレックは、デジタルテクノロジーを駆使して、持続可能な社会の実現を目指すスタートアップです。優しくて強い意志をもった人や企業と共に、良い未来を本気で創っていきたい。私たちはそんな純粋な想いを原動力に、活動しています。画期的なシステムを構築し、あらゆる人が人間らしく生きることができる世界を創っていきます。</Text>
           </Box>
-          <PrimaryButton title="ビジョン" width={{ sm: '60%', lg: "15%"}} margin="8" onClick={onClickToVision} />
+          <PrimaryButton title="ビジョン" width={{ sm: '60%', md: '30%', lg: "15%"}} margin="8" onClick={onClickToVision} />
         </Box>
         <Box as="section" w={{sm: '90%', lg: "60%"}} mx="auto" my={16} textAlign="center">
           <Box py={[8, 12]}>
@@ -67,21 +67,21 @@ export default function Home() {
             <Heading as="h2" size="md" py={4}>Service</Heading>
           </Box>
           <Box display="flex" flexWrap='wrap-reverse' alignItems='center' justifyContent='center'>
-            <Box textAlign="left" w={{ sm: '90%', lg: "55%" }}>
+            <Box textAlign="left" w={{ sm: '90%', md: '70%', lg: "55%" }}>
               <Heading as="h3" size="sm" textAlign={{ sm: 'center', lg: 'left' }}>流れを敏感に捉え、地球を支える</Heading>
               <Heading as="h3" size="sm" textAlign={{ sm: 'center', lg: 'left' }} pt={4}>Everyday Action for the Earth.</Heading>
               <Text py={8}>後世まで綺麗な地球を残すため、勇気を振り絞って、それぞれが小さなアクションを起こすことが大切です。それが私たちの責任であり、良い未来を築くために必要不可欠なことです。ゼットレっくは、そんな勇気ある人々を支援するために全力を尽くして、共に世界を前進させていきます。</Text>
               <Box display="flex" w="100%" justifyContent="space-evenly" flexWrap='wrap'>
-                <PrimaryButton title='事業内容' width={{ sm: '60%', lg: "35%" }} margin={{ sm: 4, lg: 0 }} onClick={onClickToServices} />
-                <BorderButton title='もっと詳しく' width={{ sm: '60%', lg: "35%" }} onClick={onClickMore} />
+                <PrimaryButton title='事業内容' width={{ sm: '60%', md: '45%', lg: "35%" }} margin={{ sm: 4, md: '0', lg: 0 }} onClick={onClickToServices} />
+                <BorderButton title='もっと詳しく' width={{ sm: '60%', md: '45%', lg: "35%" }} onClick={onClickMore} />
               </Box>
             </Box>
-            <Box w={{ sm: '90%', lg: "45%" }}>
+            <Box w={{ sm: '90%', md: '70%', lg: "45%" }}>
               <Image src={HomeServiceImage.src} alt="Zrekの提供サービス" />
             </Box>
           </Box>
         </Box>
-        <Box as="section" w={{sm: '90%', lg: "73%"}} mx="auto" my={16} textAlign="center">
+        <Box as="section" w={{ sm: '90%', md: '80%', lg: "73%"}} mx="auto" my={16} textAlign="center">
           <Box py={[8, 12]}>
             <Heading as="h1" size="xl">ニュース</Heading>
             <Heading as="h2" size="md" py={4}>News</Heading>
@@ -92,7 +92,7 @@ export default function Home() {
               <NewsItem date="2021.7.2" tag="コーポレート" title="Accelerate Membership Programに採択されました" />
               <NewsItem date="2021.6.13" tag="コーポレート" title="鈴木隆道氏が顧問に就任しました" />
             </Box>
-            <PrimaryButton title='ニュース一覧' width={{ sm: '60%', lg: "17%" }} onClick={onClickToNews} />
+            <PrimaryButton title='ニュース一覧' width={{ sm: '60%', md: '40%', lg: "17%" }} onClick={onClickToNews} />
           </Box>
         </Box>
       </Box>

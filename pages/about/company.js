@@ -11,7 +11,7 @@ export default function Company() {
       <Meta pageTitle="会社概要" pageDescription="ゼットレックについての基本情報です。" />
       <Header />
       <Hero title="会社概要" />
-      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w={{ sm: '95%', lg: "60%" }} mx="auto" my={{ sm: 16, lg: 32 }}>
+      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w={{ sm: '95%', md: '80%', lg: "60%" }} mx="auto" my={{ sm: 16, lg: 32 }}>
         <Table variant="simple" size="lg">
           <Tbody>
             <Tr>

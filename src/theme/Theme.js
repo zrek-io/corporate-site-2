@@ -34,15 +34,15 @@ export const theme = extendTheme({
       sizes: {
         // as='h3'
         sm: {
-          fontSize: { sm: 'lg', lg: '2xl'}
+          fontSize: { sm: 'lg', md: 'xl', lg: '2xl'}
         },
         // as='h2'
         md: {
-          fontSize: { sm: 'xl', lg: '3xl' }
+          fontSize: { sm: 'xl', md: '2xl', lg: '3xl' }
         },
         // as='h1'
         xl: {
-          fontSize: { sm: '2xl', lg: '4xl' }
+          fontSize: { sm: '2xl', md: '3xl', lg: '4xl' }
         }
       }
     },

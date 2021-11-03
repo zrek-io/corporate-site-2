@@ -16,7 +16,7 @@ export default function Recruit() {
       <Meta pageTitle="採用情報" />
       <Header />
       <Hero title="採用情報" />
-      <Box as="main" w="73%" mx="auto" my={32}>
+      <Box as="main" w={{ sm: '85%', md: '80%', lg: "73%" }} mx="auto" my={{ sm: 16, lg: 32 }}>
         <Box w="100%" mb={20}>
           <SectionTitle SectionTitle="求める人材" />
           <Text>主体的に行動、自分なりのこだわりがある人</Text>
@@ -38,7 +38,7 @@ export default function Recruit() {
           <Text>インターン</Text>
         </Box>
         <Center>
-          <PrimaryButton title="少し興味がある" width="15%" margin="8" onClick={onClickContact} />
+          <PrimaryButton title="少し興味がある" width={{ sm: '60%', md: '30%', lg: "15%"}} margin="8" onClick={onClickContact} />
         </Center>
       </Box>
       <Footer />

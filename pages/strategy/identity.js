@@ -10,7 +10,7 @@ export default function Identity() {
       <Meta pageTitle="経営理念" pageDescription="ゼットレックの経営理念です。" />
       <Header />
       <Hero title="経営理念" />
-      <Box as="main" w="60%" mx="auto">
+      <Box as="main" w={{ sm: '80%', lg: "60%" }} h={{ sm: '40vh', md: '50vh', lg: 'auto' }} mx="auto">
         <Box display="flex" alignItems="center" justifyContent="center" w="100%" h={40} my={16} bgColor="primary.100">
           <Heading as="h1" size="lg">士魂商才、人間尊重</Heading>
         </Box>

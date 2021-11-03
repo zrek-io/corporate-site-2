@@ -24,7 +24,7 @@ export const MenuSp = () => {
       <Drawer isOpen={isOpen} onClose={onClose} placement='top'>
         <DrawerContent>
           <DrawerBody py={12}>
-            <Accordion defaultIndex={[0]} allowMultiple>
+            <Accordion allowMultiple>
               <AccordionItem>
                 <Heading as='h2' size='md'>
                   <AccordionButton _focus={{ focus: 'none' }}>

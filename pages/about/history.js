@@ -10,7 +10,7 @@ export default function History() {
       <Meta pageTitle="沿革" pageDescription="ゼットレックの歩みを記載しています。" />
       <Header />
       <Hero title="沿革" />
-      <Box w={{ sm: '90%', lg: "60%" }} mx="auto" my={{ sm: 8, lg: 16 }}>
+      <Box w={{ sm: '90%', md: '80%', lg: "60%" }} h={{ md: '50vh', lg: 'auto' }} mx="auto" my={{ sm: 8, lg: 16 }}>
         <Box display="flex">
           <Box
             pos="relative"

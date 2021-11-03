@@ -10,7 +10,7 @@ export default function Message() {
       <Meta pageTitle="トップメッセージ" pageDescription="ゼットレックのトップメッセージです。" />
       <Header />
       <Hero title="トップメッセージ" />
-      <Box as="main" w="60%" mx="auto" my={20}>
+      <Box as="main" w={{ sm: '90%', md: '80%', lg: "60%" }} h={{ md: '50vh', lg: 'auto' }} mx="auto" my={{ sm: 10, lg: 20 }}>
         <Box w="100%">
           <Box mt={12} mb={20}>
             <Text>

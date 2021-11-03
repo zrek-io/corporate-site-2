@@ -17,10 +17,10 @@ export default function Strategy() {
       <Meta pageTitle="経営方針" />
       <Header />
       <Hero title="経営方針" />
-      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="73%" mx="auto" my={32}>
-        <Card title="ビジョン" explain="ゼットレックのバリュー、パーパス、ミッションについて記載しています。" width="30%" onClick={onClickVision} />
-        <Card title="トップメッセージ" explain="ゼットレックのトップメッセージです。" width="30%" onClick={onClickMessage} />
-        <Card title="経営理念" explain="ゼットレックの経営理念です。" width="30%" onClick={onClickIdentity} />
+      <Box as="main" display="flex" flexWrap="wrap" justifyContent={{ sm: 'center', md: 'space-between', lg: "space-between" }} w="73%" mx="auto" my={{ sm: 16, lg: 32 }}>
+        <Card title="ビジョン" explain="ゼットレックのバリュー、パーパス、ミッションについて記載しています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickVision} />
+        <Card title="トップメッセージ" explain="ゼットレックのトップメッセージです。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickMessage} />
+        <Card title="経営理念" explain="ゼットレックの経営理念です。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickIdentity} />
       </Box>
       <Footer />
     </Box>

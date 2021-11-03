@@ -25,7 +25,7 @@ export default function Contact() {
       <Meta pageTitle="問い合わせ" />
       <Header />
       <Hero title="問い合わせ" />
-      <Box as="main" w="60%" mx="auto" my={20}>
+      <Box as="main" w={{ sm: '85%', md: '80%', lg: "60%" }} mx="auto" my={{ sm: 10, lg: 20}}>
         <Box>
           <Text>
             ご相談・ご依頼・各種お問い合わせは下記のフォームよりお送りください。
@@ -114,7 +114,11 @@ export default function Contact() {
               への同意が必要です。
             </Text>
             <Button
-              w="30%"
+              w={{
+                sm: '80%',
+                md: '60%',  
+                lg: "30%"
+              }}
               m={8}
               borderRadius="3xl"
               bg="primary.200"

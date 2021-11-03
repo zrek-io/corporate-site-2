@@ -10,7 +10,7 @@ export default function Vision() {
       <Meta pageTitle="ビジョン" pageDescription="ゼットレックのバリュー、パーパス、ミッションについて記載しています。" />
       <Header />
       <Hero title="ビジョン" />
-      <Box as="main" w="60%" mx="auto">
+      <Box as="main" w={{ sm: '90%', md: '80%', lg: "60%" }} mx="auto">
         <Box my={20}>
           <Heading as="h1" size="lg">Value Statement</Heading>
           <Text my={4}>

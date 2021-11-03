@@ -11,7 +11,7 @@ export default function News() {
       <Meta pageTitle="ニュース" />
       <Header />
       <Hero title="ニュース" />
-      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w="73%" mx="auto" my={32}>
+      <Box as="main" display="flex" flexWrap="wrap" justifyContent="space-between" w={{ sm: '90%', md: '80%', lg: "73%" }} mx="auto" my={32}>
         <NewsItem date="2021.9.18" tag="お知らせ" title="代表の今村がHATSUFESで成果発表会を行いました" />
         <NewsItem date="2021.8.23" tag="サービス" title="カーボンカードのランディングページを公開しました lp.z-rek.com/" />
         <NewsItem date="2021.7.3" tag="サービス" title="地域コミュニティサービス『vivicom』実証実験α版リリースしました" />
