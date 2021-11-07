@@ -32,22 +32,22 @@ export const MenuCardStrategy = (props) => {
       <UnorderedList w="45%" listStyleType="none" listStylePos="inside" marginInlineStart="0">
         <ListItem pb={4}>
           <NextLink href="/strategy" passHref>
-            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>経営方針</Link>
+            <Link fontWeight="bold" fontSize="lg" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>経営方針</Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/strategy/vision" passHref>
-            <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>ビジョン</Link>
+            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>ビジョン</Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/strategy/message" passHref>
-            <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>トップメッセージ</Link>
+            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>トップメッセージ</Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/strategy/identity" passHref>
-            <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>経営理念</Link>
+            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>経営理念</Link>
           </NextLink>
         </ListItem>
       </UnorderedList>

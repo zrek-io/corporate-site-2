@@ -32,31 +32,31 @@ export const MenuCardAbout = (props) => {
       <UnorderedList w="45%" listStyleType="none" listStylePos="inside" marginInlineStart="0">
         <ListItem pb={4}>
           <NextLink href="/about" passHref>
-            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>企業情報</Link>
+            <Link fontWeight="bold" fontSize="lg" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>企業情報</Link>
           </NextLink>
         </ListItem>
         <Box display="flex" alignItems="center" w="100%">
           <Box w="45%">
             <ListItem py={2}>
               <NextLink href="/about/company" passHref>
-                <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>会社概要</Link>
+                <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>会社概要</Link>
               </NextLink>
             </ListItem>
             <ListItem py={2}>
               <NextLink href="/about/history" passHref>
-                <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>沿革</Link>
+                <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>沿革</Link>
               </NextLink>
             </ListItem>
           </Box>
           <Box w="45%">
             <ListItem py={2}>
               <NextLink href="/about/access" passHref>
-                <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>アクセス</Link>
+                <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>アクセス</Link>
               </NextLink>
             </ListItem>
             <ListItem py={2}>
               <NextLink href="/about/brand" passHref>
-                <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>ブランド</Link>
+                <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>ブランド</Link>
               </NextLink>
             </ListItem>
           </Box>

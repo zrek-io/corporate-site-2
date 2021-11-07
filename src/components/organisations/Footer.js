@@ -11,7 +11,7 @@ export const Footer = () => {
           <Box py={4}>
             <NextLink href="/" passHref>
               <Link _hover={{ textDecoration: "none" }}>
-                <Heading as="h3" fontSize="lg" color="primary.200">トップページ</Heading>
+                <Heading as="h3" fontSize="lg" fontWeight="bold" color="primary.200">トップページ</Heading>
                 <Divider borderColor="primary.200" my={1} />
               </Link>
             </NextLink>
@@ -20,7 +20,7 @@ export const Footer = () => {
             <Box>
               <NextLink href="/about" passHref>
                 <Link _hover={{ textDecoration: "none" }}>
-                  <Heading as="h3" fontSize="lg" color="primary.200">企業情報</Heading>
+                  <Heading as="h3" fontSize="lg" fontWeight="bold" color="primary.200">企業情報</Heading>
                   <Divider borderColor="primary.200" my={1} />
                 </Link>
               </NextLink>
@@ -28,22 +28,22 @@ export const Footer = () => {
             <Box py={2}>
               <NextLink href="/about/company" passHref>
                 <Link>
-                  <Text fontSize="xs" lineHeight={6}>会社概要</Text>
+                  <Text fontSize="md" lineHeight={10}>会社概要</Text>
                 </Link>
               </NextLink>
               <NextLink href="/about/history" passHref>
                 <Link>
-                  <Text fontSize="xs" lineHeight={6}>沿革</Text>
+                  <Text fontSize="md" lineHeight={10}>沿革</Text>
                 </Link>
               </NextLink>
               <NextLink href="/about/access" passHref>
                 <Link>
-                  <Text fontSize="xs" lineHeight={6}>アクセス</Text>
+                  <Text fontSize="md" lineHeight={10}>アクセス</Text>
                 </Link>
               </NextLink>
               <NextLink href="/about/brand" passHref>
                 <Link>
-                  <Text fontSize="xs" lineHeight={6}>ブランド</Text>
+                  <Text fontSize="md" lineHeight={10}>ブランド</Text>
                 </Link>
               </NextLink>
             </Box>
@@ -54,7 +54,7 @@ export const Footer = () => {
           <Box py={4}>
             <NextLink href="/strategy" passHref>
               <Link _hover={{ textDecoration: "none" }}>
-                <Heading as="h3" fontSize="lg" color="primary.200">経営方針</Heading>
+                <Heading as="h3" fontSize="lg" fontWeight="bold" color="primary.200">経営方針</Heading>
                 <Divider borderColor="primary.200" my={1} />
               </Link>
             </NextLink>
@@ -62,17 +62,17 @@ export const Footer = () => {
           <Box>
             <NextLink href="/strategy/vision" passHref>
               <Link>
-                <Text fontSize="xs" lineHeight={6}>ビジョン</Text>
+                <Text fontSize="md" lineHeight={10}>ビジョン</Text>
               </Link>
             </NextLink>
             <NextLink href="/strategy/message" passHref>
               <Link>
-                <Text fontSize="xs" lineHeight={6}>トップメッセージ</Text>
+                <Text fontSize="md" lineHeight={10}>トップメッセージ</Text>
               </Link>
             </NextLink>
             <NextLink href="/strategy/identity" passHref>
               <Link>
-                <Text fontSize="xs" lineHeight={6}>経営理念</Text>
+                <Text fontSize="md" lineHeight={10}>経営理念</Text>
               </Link>
             </NextLink>
           </Box>
@@ -82,7 +82,7 @@ export const Footer = () => {
           <Box py={4}>
             <NextLink href="/service" passHref>
               <Link _hover={{ textDecoration: "none" }}>
-                <Heading as="h3" fontSize="lg" color="primary.200">事業内容</Heading>
+                <Heading as="h3" fontSize="lg" fontWeight="bold" color="primary.200">事業内容</Heading>
                 <Divider borderColor="primary.200" my={1} />
               </Link>
             </NextLink>
@@ -90,17 +90,17 @@ export const Footer = () => {
           <Box>
             <NextLink href="/services/climate_change" passHref>
               <Link>
-                <Text fontSize="xs" lineHeight={6}>気候変動対策</Text>
+                <Text fontSize="md" lineHeight={10}>気候変動対策</Text>
               </Link>
             </NextLink>
             <NextLink href="/services/software" passHref>
               <Link>
-                <Text fontSize="xs" lineHeight={6}>ソフトウェア開発</Text>
+                <Text fontSize="md" lineHeight={10}>ソフトウェア開発</Text>
               </Link>
             </NextLink>
             <NextLink href="/services/research_and_development" passHref>
               <Link>
-                <Text fontSize="xs" lineHeight={6}>研究開発</Text>
+                <Text fontSize="md" lineHeight={10}>研究開発</Text>
               </Link>
             </NextLink>
           </Box>
@@ -110,7 +110,7 @@ export const Footer = () => {
           <Box py={4}>
             <NextLink href="/news" passHref>
               <Link _hover={{ textDecoration: "none" }}>
-                <Heading as="h3" fontSize="lg" color="primary.200">ニュース</Heading>
+                <Heading as="h3" fontSize="lg" fontWeight="bold" color="primary.200">ニュース</Heading>
                 <Divider borderColor="primary.200" my={1} />
               </Link>
             </NextLink>
@@ -118,7 +118,7 @@ export const Footer = () => {
           <Box py={4}>
             <NextLink href="/recruit" passHref>
               <Link _hover={{ textDecoration: "none" }}>
-                <Heading as="h3" fontSize="lg" color="primary.200">採用情報</Heading>
+                <Heading as="h3" fontSize="lg" fontWeight="bold" color="primary.200">採用情報</Heading>
                 <Divider borderColor="primary.200" my={1} />
               </Link>
             </NextLink>
@@ -126,7 +126,7 @@ export const Footer = () => {
           <Box py={4}>
             <NextLink href="/contact" passHref>
               <Link _hover={{ textDecoration: "none" }}>
-                <Heading as="h3" fontSize="lg" color="primary.200">問い合わせ</Heading>
+                <Heading as="h3" fontSize="lg" fontWeight="bold" color="primary.200">問い合わせ</Heading>
                 <Divider borderColor="primary.200" my={1} />
               </Link>
             </NextLink>
@@ -134,15 +134,15 @@ export const Footer = () => {
         </Box>
 
       </Box>
-      <Box display="flex" alignItems="center" justifyContent="space-around" flexWrap='wrap' w={{ sm: '90%', md: '65%', lg: "40%" }} mx="auto" py={8}>
-        <NextLink href="/terms_of_service" passHref w={{ sm: '100%', lg: '30%' }}>
-          <Link fontSize="xs">サイト利用規約</Link>
+      <Box display="flex" alignItems="center" justifyContent="center" flexWrap='wrap' w={{ sm: '90%', md: '65%', lg: "40%" }} mx="auto" py={8}>
+        <NextLink href="/terms_of_service" passHref>
+          <Link　w={{ sm: '100%', lg: '30%' }} py={2} textAlign="center" fontSize="xs">サイト利用規約</Link>
         </NextLink>
-        <NextLink href="/privacy_policy" passHref w={{ sm: '100%', lg: '30%' }}>
-          <Link fontSize="xs">個人情報保護方針</Link>
+        <NextLink href="/privacy_policy" passHref>
+          <Link　w={{ sm: '100%', lg: '30%' }} py={2} textAlign="center" fontSize="xs">個人情報保護方針</Link>
         </NextLink>
-        <NextLink href="/antisocial" passHref w={{ sm: '100%', lg: '30%' }}>
-          <Link fontSize="xs">反社会的勢力に対する基本方針</Link>
+        <NextLink href="/antisocial" passHref>
+          <Link　w={{ sm: '100%', lg: '30%' }} py={2} textAlign="center" fontSize="xs">反社会的勢力に対する基本方針</Link>
         </NextLink>
       </Box>
       <Box display="flex" alignItems="center" justifyContent="space-around" w={{ sm: '30%', md: '20%', lg: "8%" }} mx="auto" py={2}>

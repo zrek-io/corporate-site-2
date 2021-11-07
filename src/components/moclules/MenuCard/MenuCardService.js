@@ -32,22 +32,22 @@ export const MenuCardService = (props) => {
       <UnorderedList w="45%" listStyleType="none" listStylePos="inside" marginInlineStart="0">
         <ListItem pb={4}>
           <NextLink href="/service" passHref>
-            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>事業内容</Link>
+            <Link fontWeight="bold" fontSize="lg" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>事業内容</Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/services/climate_change" passHref>
-            <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>気候変動対策</Link>
+            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>気候変動対策</Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/services/software" passHref>
-            <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>ソフトウェア開発</Link>
+            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>ソフトウェア開発</Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/services/research_and_development" passHref>
-            <Link fontSize="xs" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>研究開発</Link>
+            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>研究開発</Link>
           </NextLink>
         </ListItem>
       </UnorderedList>
