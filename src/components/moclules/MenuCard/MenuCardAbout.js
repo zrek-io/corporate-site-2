@@ -1,7 +1,14 @@
-import { Link } from '@chakra-ui/react';
-import { Box, Divider, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/layout"
-import NextLink from "next/link"
-import bgImg from "../../../static/navmenu_company.jpg"
+import { Link } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Heading,
+  ListItem,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/layout";
+import NextLink from "next/link";
+import bgImg from "../../../static/navmenu_about.jpeg";
 
 export const MenuCardAbout = (props) => {
   const { visibility, opacity } = props;
@@ -28,41 +35,109 @@ export const MenuCardAbout = (props) => {
         <Heading fontSize="2rem">About</Heading>
         <Text fontSize="sm">企業情報</Text>
       </Box>
-      <Divider w="5%" h="70%" borderColor="primary.150" orientation="vertical" />
-      <UnorderedList w="45%" listStyleType="none" listStylePos="inside" marginInlineStart="0">
+      <Divider
+        w="5%"
+        h="70%"
+        borderColor="primary.150"
+        orientation="vertical"
+      />
+      <UnorderedList
+        w="45%"
+        listStyleType="none"
+        listStylePos="inside"
+        marginInlineStart="0"
+      >
         <ListItem pb={4}>
           <NextLink href="/about" passHref>
-            <Link fontWeight="bold" fontSize="lg" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>企業情報</Link>
+            <Link
+              fontWeight="bold"
+              fontSize="lg"
+              _hover={{
+                color: "primary.250",
+                borderBottom: "1px",
+                borderColor: "primary.250",
+                paddingBottom: "7px",
+              }}
+            >
+              企業情報
+            </Link>
           </NextLink>
         </ListItem>
         <Box display="flex" alignItems="center" w="100%">
           <Box w="45%">
             <ListItem py={2}>
               <NextLink href="/about/company" passHref>
-                <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>会社概要</Link>
+                <Link
+                  fontSize="md"
+                  _hover={{
+                    color: "primary.250",
+                    borderBottom: "1px",
+                    borderColor: "primary.250",
+                    paddingBottom: "7px",
+                  }}
+                >
+                  会社概要
+                </Link>
               </NextLink>
             </ListItem>
             <ListItem py={2}>
               <NextLink href="/about/history" passHref>
-                <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>沿革</Link>
+                <Link
+                  fontSize="md"
+                  _hover={{
+                    color: "primary.250",
+                    borderBottom: "1px",
+                    borderColor: "primary.250",
+                    paddingBottom: "7px",
+                  }}
+                >
+                  沿革
+                </Link>
               </NextLink>
             </ListItem>
           </Box>
           <Box w="45%">
             <ListItem py={2}>
               <NextLink href="/about/access" passHref>
-                <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>アクセス</Link>
+                <Link
+                  fontSize="md"
+                  _hover={{
+                    color: "primary.250",
+                    borderBottom: "1px",
+                    borderColor: "primary.250",
+                    paddingBottom: "7px",
+                  }}
+                >
+                  アクセス
+                </Link>
               </NextLink>
             </ListItem>
             <ListItem py={2}>
               <NextLink href="/about/brand" passHref>
-                <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>ブランド</Link>
+                <Link
+                  fontSize="md"
+                  _hover={{
+                    color: "primary.250",
+                    borderBottom: "1px",
+                    borderColor: "primary.250",
+                    paddingBottom: "7px",
+                  }}
+                >
+                  ブランド
+                </Link>
               </NextLink>
             </ListItem>
           </Box>
         </Box>
       </UnorderedList>
-      <Box w="30%" h={60} bgImage={bgImg.src} bgSize="cover" bgRepeat="no-repeat" borderRightRadius="md"></Box>
+      <Box
+        w="30%"
+        h={60}
+        bgImage={bgImg.src}
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        borderRightRadius="md"
+      ></Box>
     </Box>
-  )
-}
+  );
+};

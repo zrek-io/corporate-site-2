@@ -1,7 +1,14 @@
-import { Link } from '@chakra-ui/react';
-import { Box, Divider, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/layout"
-import NextLink from "next/link"
-import bgImg from "../../../static/navmenu_company.jpg"
+import { Link } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Heading,
+  ListItem,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/layout";
+import NextLink from "next/link";
+import bgImg from "../../../static/navmenu_strategy.jpeg";
 
 export const MenuCardStrategy = (props) => {
   const { visibility, opacity } = props;
@@ -28,30 +35,88 @@ export const MenuCardStrategy = (props) => {
         <Heading fontSize="2rem">Strategy</Heading>
         <Text fontSize="sm">経営方針</Text>
       </Box>
-      <Divider w="5%" h="70%" borderColor="primary.150" orientation="vertical" />
-      <UnorderedList w="45%" listStyleType="none" listStylePos="inside" marginInlineStart="0">
+      <Divider
+        w="5%"
+        h="70%"
+        borderColor="primary.150"
+        orientation="vertical"
+      />
+      <UnorderedList
+        w="45%"
+        listStyleType="none"
+        listStylePos="inside"
+        marginInlineStart="0"
+      >
         <ListItem pb={4}>
           <NextLink href="/strategy" passHref>
-            <Link fontWeight="bold" fontSize="lg" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>経営方針</Link>
+            <Link
+              fontWeight="bold"
+              fontSize="lg"
+              _hover={{
+                color: "primary.250",
+                borderBottom: "1px",
+                borderColor: "primary.250",
+                paddingBottom: "7px",
+              }}
+            >
+              経営方針
+            </Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/strategy/vision" passHref>
-            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>ビジョン</Link>
+            <Link
+              fontSize="md"
+              _hover={{
+                color: "primary.250",
+                borderBottom: "1px",
+                borderColor: "primary.250",
+                paddingBottom: "7px",
+              }}
+            >
+              ビジョン
+            </Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/strategy/message" passHref>
-            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>トップメッセージ</Link>
+            <Link
+              fontSize="md"
+              _hover={{
+                color: "primary.250",
+                borderBottom: "1px",
+                borderColor: "primary.250",
+                paddingBottom: "7px",
+              }}
+            >
+              トップメッセージ
+            </Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/strategy/identity" passHref>
-            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>経営理念</Link>
+            <Link
+              fontSize="md"
+              _hover={{
+                color: "primary.250",
+                borderBottom: "1px",
+                borderColor: "primary.250",
+                paddingBottom: "7px",
+              }}
+            >
+              経営理念
+            </Link>
           </NextLink>
         </ListItem>
       </UnorderedList>
-      <Box w="30%" h={60} bgImage={bgImg.src} bgSize="cover" bgRepeat="no-repeat" borderRightRadius="md"></Box>
+      <Box
+        w="30%"
+        h={60}
+        bgImage={bgImg.src}
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        borderRightRadius="md"
+      ></Box>
     </Box>
-  )
-}
+  );
+};

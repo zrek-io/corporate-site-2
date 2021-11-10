@@ -1,7 +1,14 @@
-import { Link } from '@chakra-ui/react';
-import { Box, Divider, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/layout"
-import NextLink from "next/link"
-import bgImg from "../../../static/navmenu_company.jpg"
+import { Link } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Heading,
+  ListItem,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/layout";
+import NextLink from "next/link";
+import bgImg from "../../../static/navmenu_service.jpeg";
 
 export const MenuCardService = (props) => {
   const { visibility, opacity } = props;
@@ -28,30 +35,88 @@ export const MenuCardService = (props) => {
         <Heading fontSize="2rem">Services</Heading>
         <Text fontSize="sm">事業内容</Text>
       </Box>
-      <Divider w="5%" h="70%" borderColor="primary.150" orientation="vertical" />
-      <UnorderedList w="45%" listStyleType="none" listStylePos="inside" marginInlineStart="0">
+      <Divider
+        w="5%"
+        h="70%"
+        borderColor="primary.150"
+        orientation="vertical"
+      />
+      <UnorderedList
+        w="45%"
+        listStyleType="none"
+        listStylePos="inside"
+        marginInlineStart="0"
+      >
         <ListItem pb={4}>
           <NextLink href="/service" passHref>
-            <Link fontWeight="bold" fontSize="lg" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>事業内容</Link>
+            <Link
+              fontWeight="bold"
+              fontSize="lg"
+              _hover={{
+                color: "primary.250",
+                borderBottom: "1px",
+                borderColor: "primary.250",
+                paddingBottom: "7px",
+              }}
+            >
+              事業内容
+            </Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/services/climate_change" passHref>
-            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>気候変動対策</Link>
+            <Link
+              fontSize="md"
+              _hover={{
+                color: "primary.250",
+                borderBottom: "1px",
+                borderColor: "primary.250",
+                paddingBottom: "7px",
+              }}
+            >
+              気候変動対策
+            </Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/services/software" passHref>
-            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>ソフトウェア開発</Link>
+            <Link
+              fontSize="md"
+              _hover={{
+                color: "primary.250",
+                borderBottom: "1px",
+                borderColor: "primary.250",
+                paddingBottom: "7px",
+              }}
+            >
+              ソフトウェア開発
+            </Link>
           </NextLink>
         </ListItem>
         <ListItem py={2}>
           <NextLink href="/services/research_and_development" passHref>
-            <Link fontSize="md" _hover={{ color: "primary.250", borderBottom: "1px", borderColor: "primary.250", paddingBottom: "7px" }}>研究開発</Link>
+            <Link
+              fontSize="md"
+              _hover={{
+                color: "primary.250",
+                borderBottom: "1px",
+                borderColor: "primary.250",
+                paddingBottom: "7px",
+              }}
+            >
+              研究開発
+            </Link>
           </NextLink>
         </ListItem>
       </UnorderedList>
-      <Box w="30%" h={60} bgImage={bgImg.src} bgSize="cover" bgRepeat="no-repeat" borderRightRadius="md"></Box>
+      <Box
+        w="30%"
+        h={60}
+        bgImage={bgImg.src}
+        bgSize="cover"
+        bgRepeat="no-repeat"
+        borderRightRadius="md"
+      ></Box>
     </Box>
-  )
-}
+  );
+};
