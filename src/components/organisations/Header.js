@@ -6,7 +6,7 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
-import Logo from "../../static/header_logo.svg";
+import Logo from "../../../public/static/logo/header_logo.svg";
 import { SecondaryButton } from "../atoms/SecondaryButton";
 import NextLink from "next/link";
 import { NavmenuAbout } from "./NavMenuItem/NavmenuAbout";

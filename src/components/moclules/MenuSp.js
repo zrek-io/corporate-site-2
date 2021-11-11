@@ -7,27 +7,42 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  IconButton
-} from "@chakra-ui/react"
-import { Box, Heading, UnorderedList, ListItem, Link, Image } from "@chakra-ui/layout"
-import { useDisclosure } from '@chakra-ui/hooks';
-import { AiOutlineMenu } from 'react-icons/ai'
-import NextLink from 'next/link';
-import Logo from '../../static/header_logo.png'
+  IconButton,
+} from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  UnorderedList,
+  ListItem,
+  Link,
+  Image,
+} from "@chakra-ui/layout";
+import { useDisclosure } from "@chakra-ui/hooks";
+import { AiOutlineMenu } from "react-icons/ai";
+import NextLink from "next/link";
 
 export const MenuSp = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box display={{ sm: 'flex', lg: 'none' }} alignItems="center">
-      <IconButton variant='unstyled' color='primary.400' onClick={onOpen} aria-label="menu" icon={<AiOutlineMenu />} _focus={{ focus: "none" }}>open</IconButton>
-      <Drawer isOpen={isOpen} onClose={onClose} placement='top'>
+    <Box display={{ sm: "flex", lg: "none" }} alignItems="center">
+      <IconButton
+        variant="unstyled"
+        color="primary.400"
+        onClick={onOpen}
+        aria-label="menu"
+        icon={<AiOutlineMenu />}
+        _focus={{ focus: "none" }}
+      >
+        open
+      </IconButton>
+      <Drawer isOpen={isOpen} onClose={onClose} placement="top">
         <DrawerContent>
           <DrawerBody py={12}>
             <Accordion allowMultiple>
               <AccordionItem>
-                <Heading as='h2' size='md'>
-                  <AccordionButton _focus={{ focus: 'none' }}>
+                <Heading as="h2" size="md">
+                  <AccordionButton _focus={{ focus: "none" }}>
                     <Box flex="1" textAlign="left">
                       企業情報
                     </Box>
@@ -35,10 +50,10 @@ export const MenuSp = () => {
                   </AccordionButton>
                 </Heading>
                 <AccordionPanel pb={4}>
-                  <UnorderedList listStyleType='none'>
+                  <UnorderedList listStyleType="none">
                     <ListItem>
-                      <NextLink href='/about' passHref>
-                        <Link fontSize='xs'>企業情報TOP</Link>
+                      <NextLink href="/about" passHref>
+                        <Link fontSize="xs">企業情報TOP</Link>
                       </NextLink>
                     </ListItem>
                     <ListItem>
@@ -66,8 +81,8 @@ export const MenuSp = () => {
               </AccordionItem>
 
               <AccordionItem>
-                <Heading as='h2' size='md'>
-                  <AccordionButton _focus={{ focus: 'none' }}>
+                <Heading as="h2" size="md">
+                  <AccordionButton _focus={{ focus: "none" }}>
                     <Box flex="1" textAlign="left">
                       経営方針
                     </Box>
@@ -101,8 +116,8 @@ export const MenuSp = () => {
               </AccordionItem>
 
               <AccordionItem>
-                <Heading as='h2' size='md'>
-                  <AccordionButton _focus={{ focus: 'none' }}>
+                <Heading as="h2" size="md">
+                  <AccordionButton _focus={{ focus: "none" }}>
                     <Box flex="1" textAlign="left">
                       事業内容
                     </Box>
@@ -127,7 +142,10 @@ export const MenuSp = () => {
                       </NextLink>
                     </ListItem>
                     <ListItem>
-                      <NextLink href="/services/research_and_development" passHref>
+                      <NextLink
+                        href="/services/research_and_development"
+                        passHref
+                      >
                         <Link fontSize="xs">研究開発</Link>
                       </NextLink>
                     </ListItem>
@@ -136,8 +154,8 @@ export const MenuSp = () => {
               </AccordionItem>
 
               <AccordionItem>
-                <Heading as='h2' size='md'>
-                  <AccordionButton _focus={{ focus: 'none' }}>
+                <Heading as="h2" size="md">
+                  <AccordionButton _focus={{ focus: "none" }}>
                     <Box flex="1" textAlign="left">
                       <NextLink href="/news" passHref>
                         <Link fontSize="md">ニュース</Link>
@@ -148,8 +166,8 @@ export const MenuSp = () => {
               </AccordionItem>
 
               <AccordionItem>
-                <Heading as='h2' size='md'>
-                  <AccordionButton _focus={{ focus: 'none' }}>
+                <Heading as="h2" size="md">
+                  <AccordionButton _focus={{ focus: "none" }}>
                     <Box flex="1" textAlign="left">
                       <NextLink href="/recruit" passHref>
                         <Link fontSize="md">採用情報</Link>
@@ -160,8 +178,8 @@ export const MenuSp = () => {
               </AccordionItem>
 
               <AccordionItem>
-                <Heading as='h2' size='md'>
-                  <AccordionButton _focus={{ focus: 'none' }}>
+                <Heading as="h2" size="md">
+                  <AccordionButton _focus={{ focus: "none" }}>
                     <Box flex="1" textAlign="left">
                       <NextLink href="/contact" passHref>
                         <Link fontSize="md">問い合わせ</Link>
@@ -170,11 +188,10 @@ export const MenuSp = () => {
                   </AccordionButton>
                 </Heading>
               </AccordionItem>
-
             </Accordion>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
     </Box>
-  )
-}
+  );
+};
