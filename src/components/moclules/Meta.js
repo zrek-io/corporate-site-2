@@ -19,7 +19,7 @@ export const Meta = (props) => {
       <meta property="og:site_name" content="株式会社Zrek" />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://z-rek.com/ogp.png" />
+      <meta property="og:image" content="https://z-rek.com/static/ogp.png" />
       <meta property="og:image:width" content="1280" />
       <meta property="og:image:height" content="640" />
       <meta name="twitter:card" content="summary" />
