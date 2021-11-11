@@ -8,7 +8,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/layout";
 import NextLink from "next/link";
-import bgImg from "../../../static/navmenu_about.jpeg";
+import bgImg from "../../../static/navmenu_about.svg";
 
 export const MenuCardAbout = (props) => {
   const { visibility, opacity } = props;
