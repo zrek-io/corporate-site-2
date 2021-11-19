@@ -35,7 +35,7 @@ export default function Vision() {
         </Box>
         <Box my={12}>
           <Heading as="h1" size="lg">Mission</Heading>
-          <Text my={4}>2024年までに優れたシステムを確立させ、Sustainability × Digital分野のニッチ市場において唯一無二の存在となる。</Text>
+          <Text my={4}>クリエイターの起爆剤に</Text>
         </Box>
       </Box>
       <Footer />
