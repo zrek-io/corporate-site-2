@@ -3,7 +3,7 @@ import { Box, Text } from "@chakra-ui/layout";
 import { PrimaryButton } from "../../src/components/atoms/PrimaryButton";
 import { SectionTitle } from "../../src/components/moclules/SectionTitle";
 import { Hero } from "../../src/components/organisations/Hero";
-import climateChangeImage from "../../public/static/images/climate_change.jpeg";
+import CreatorSupportImage from "../../public/static/images/creatorsupport.jpg";
 import HomeServiceImage from "../../public/static/images/home_service.png";
 import { BorderButton } from "../../src/components/atoms/BorderButton";
 import { Header } from "../../src/components/organisations/Header";
@@ -29,29 +29,26 @@ export default function ClimateChange() {
           <Box w={{ sm: "100%", lg: "50%" }}>
             <SectionTitle SectionTitle="クリエイターのインフラ構築" />
             <Text>
-              私たちは、デジタルテクノロジーを活用して世界中のクリエイターの生活に欠かせないサービスを提供していきます。大好きなクリエイターがいる方、推しがいる方、創ることが大好きなクリエイターの皆様、ぜひ一度お話をしたいです。困っていることや悩みごとを聞かせてください。
+              私たちは、デジタルテクノロジーを活用して世界中のクリエイターの生活に欠かせないサービスを提供していきます。大好きなクリエイターがいる方、推しがいる方、創ることが大好きなクリエイターの皆様、ぜひ一度お話をしたいです。困っていることや悩みごとを聞かせてください。お気軽にご連絡ください。今村 → y.imamura@z-rek.com
             </Text>
-//             <Text my={6}>
-//              （追加文章）
-//             </Text>
           </Box>
           <Box display={{ sm: "none", lg: "block" }} w="50%">
             <Image
-              src={climateChangeImage.src}
+              src={CreatorSupportImage.src}
               w="75%"
               mx="auto"
               alt="クリエイター支援"
             />
           </Box>
         </Box>
-        <Box w="100%">
-          <Image
-            src={HomeServiceImage.src}
-            w={{ sm: "90%", md: "75%", lg: "45%" }}
-            mx="auto"
-            alt="Zrekの提供サービス"
-          />
-        </Box>
+//         <Box w="100%">
+//           <Image
+//             src={HomeServiceImage.src}
+//             w={{ sm: "90%", md: "75%", lg: "45%" }}
+//             mx="auto"
+//             alt="Zrekの提供サービス"
+//           />
+//         </Box>
         <Box p={{ sm: 6, lg: 12 }} textAlign="center">
           <PrimaryButton
             title="問い合わせ"
