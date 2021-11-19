@@ -41,7 +41,7 @@ export default function ClimateChange() {
             />
           </Box>
         </Box>
-/*
+{/*
         <Box w="100%">
           <Image
             src={HomeServiceImage.src}
@@ -50,7 +50,7 @@ export default function ClimateChange() {
             alt="Zrekの提供サービス"
           />
         </Box>
-*/
+*/}
         <Box p={{ sm: 6, lg: 12 }} textAlign="center">
           <PrimaryButton
             title="問い合わせ"
@@ -58,13 +58,13 @@ export default function ClimateChange() {
             margin={{ sm: "4", lg: "8" }}
             onClick={onClickContact}
           />
-/*              
+{/*              
           <BorderButton
             title="もっと詳しく"
             width={{ sm: "65%", md: "30%", lg: "17%" }}
             onClick={onClickMore}
           />
-*/          
+*/}          
         </Box>
       </Box>
       <Footer />
