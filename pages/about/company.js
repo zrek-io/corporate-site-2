@@ -48,7 +48,7 @@ export default function Company() {
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">事業内容</Td>
-              <Td>ソフトウェア開発</Td>
+              <Td>クリエイターを支援するソフトウェアの企画・開発・運用</Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">主要取引銀行</Td>
