@@ -35,7 +35,7 @@ export default function Vision() {
         </Box>
         <Box my={12}>
           <Heading as="h1" size="lg">Mission</Heading>
-          <Text my={4}>クリエイターの起爆剤に</Text>
+          <Text my={4}>クリエイターの起爆剤になる</Text>
         </Box>
       </Box>
       <Footer />
