@@ -158,29 +158,24 @@ export default function Home() {
             </Heading>
             <Box py={6} textAlign="left">
               <NewsItem
+                date="2021.11.9"
+                tag="コーポレート"
+                title="クリエイター支援事業を開始しました"
+              />
+              <NewsItem
+                date="2021.11.3"
+                tag="お知らせ"
+                title="コーポレートサイトをリニューアルしました"
+              />                  
+              <NewsItem
                 date="2021.9.18"
                 tag="お知らせ"
-                title="代表の今村がHATSUFESで成果発表会を行いました。"
+                title="代表の今村がHATSUFESで成果発表会を行いました"
               />
               <NewsItem
                 date="2021.8.23"
                 tag="サービス"
-                title="カーボンカードのランディングページを公開しました lp.z-rek.com/"
-              />
-              <NewsItem
-                date="2021.7.3"
-                tag="サービス"
-                title="地域コミュニティサービス『vivicom』実証実験α版リリースしました"
-              />
-              <NewsItem
-                date="2021.7.2"
-                tag="コーポレート"
-                title="Accelerate Membership Programに採択されました"
-              />
-              <NewsItem
-                date="2021.6.13"
-                tag="コーポレート"
-                title="鈴木隆道氏が顧問に就任しました"
+                title="カーボンカードのランディングページを公開しました"
               />
             </Box>
             <PrimaryButton
