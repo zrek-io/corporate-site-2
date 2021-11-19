@@ -19,28 +19,28 @@ export default function ClimateChange() {
   return (
     <Box>
       <Meta
-        pageTitle="気候変動対策"
-        pageDescription="ゼットレックは気候変動に対する対策事業を展開しています。"
+        pageTitle="クリエイター支援"
+        pageDescription="ゼットレックはクリエイター支援事業を展開しています。"
       />
       <Header />
-      <Hero title="気候変動対策" />
+      <Hero title="クリエイター支援" />
       <Box as="main" w="80%" mx="auto">
         <Box display="flex" alignItems="center" justifyContent="center" my={20}>
           <Box w={{ sm: "100%", lg: "50%" }}>
-            <SectionTitle SectionTitle="気候変動に対する意識改革" />
+            <SectionTitle SectionTitle="クリエイターのインフラ構築" />
             <Text>
-              私たちは、気候変動対策に関するサービスを提供しています。気候変動対策の第一歩として必要なのはCO2排出量の可視化です。そこで、私たちはデジタル上の企業活動や個人の活動における毎月のCO2排出量を算出し、情報開示のためのデジタルカードを発行しています。
+              私たちは、デジタルテクノロジーを活用して世界中のクリエイターの生活に欠かせないサービスを提供していきます。大好きなクリエイターがいる方、推しがいる方、創ることが大好きなクリエイターの皆様、ぜひ一度お話をしたいです。困っていることや悩みごとを聞かせてください。
             </Text>
-            <Text my={6}>
-              デジタルカードは、ホームページなどのサイトに掲載でき、クラウド上でCO2排出量の管理が可能です。また、カード本体はブロックチェーンを活用した唯一性があるカードになっています。従来の情報開示に比べ、サイトの訪問者にとってはシンプルで理解しやすく、取り組む側にとっては運用のハードルが非常に低い情報開示システムになっています。環境への取り組みを正しく情報開示することで、企業や個人の価値向上を支援していきます。
-            </Text>
+//             <Text my={6}>
+//              （追加文章）
+//             </Text>
           </Box>
           <Box display={{ sm: "none", lg: "block" }} w="50%">
             <Image
               src={climateChangeImage.src}
               w="75%"
               mx="auto"
-              alt="気候変動対策"
+              alt="クリエイター支援"
             />
           </Box>
         </Box>
