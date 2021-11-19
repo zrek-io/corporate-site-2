@@ -74,7 +74,7 @@ export const MenuCardService = (props) => {
                 paddingBottom: "7px",
               }}
             >
-              気候変動対策
+              クリエイター支援
             </Link>
           </NextLink>
         </ListItem>
