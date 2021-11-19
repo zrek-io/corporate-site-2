@@ -43,11 +43,11 @@ export default function History() {
                 zIndex: "70"
               }}
             >
-              2021年9月
+              2021年11月
             </Text>
           </Box>
           <Box w={{ sm: '65%', lg: "85%" }} py={8}>
-            <Text px={12}>気候変動対策事業として、カーボンカードの提供を開始。</Text>
+            <Text px={12}>クリエイター支援事業を開始。</Text>
           </Box>
         </Box>
         <Box display="flex">
@@ -82,11 +82,11 @@ export default function History() {
                 zIndex: "70"
               }}
             >
-              2021年6月
+              2021年9月
             </Text>
           </Box>
           <Box w={{ sm: '65%', lg: "85%" }} py={8}>
-            <Text px={12}>鈴木隆道氏が顧問に就任。</Text>
+            <Text px={12}>気候変動対策事業として、カーボンカードの提供を開始</Text>
           </Box>
         </Box>
         <Box display="flex">
@@ -125,7 +125,7 @@ export default function History() {
             </Text>
           </Box>
           <Box w={{ sm: '65%', lg: "85%" }} py={8}>
-            <Text px={12}>神奈川県鎌倉市に、ソフトウェア開発を主目的として株式会社Zrekを創業。</Text>
+            <Text px={12}>神奈川県鎌倉市に、ソフトウェア開発を主目的として株式会社Zrekを創業</Text>
           </Box>
         </Box>
       </Box>
