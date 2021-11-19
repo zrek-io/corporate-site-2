@@ -133,7 +133,7 @@ export const MenuSp = () => {
                     </ListItem>
                     <ListItem>
                       <NextLink href="/services/climate_change" passHref>
-                        <Link fontSize="xs">気候変動対策</Link>
+                        <Link fontSize="xs">クリエイター支援</Link>
                       </NextLink>
                     </ListItem>
                     <ListItem>
