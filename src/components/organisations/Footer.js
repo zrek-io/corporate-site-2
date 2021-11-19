@@ -90,7 +90,7 @@ export const Footer = () => {
           <Box>
             <NextLink href="/services/climate_change" passHref>
               <Link>
-                <Text fontSize="md" lineHeight={10}>気候変動対策</Text>
+                <Text fontSize="md" lineHeight={10}>クリエイター支援</Text>
               </Link>
             </NextLink>
             <NextLink href="/services/software" passHref>
