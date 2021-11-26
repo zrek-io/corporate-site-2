@@ -78,6 +78,7 @@ export default function Home() {
             onClick={onClickToVision}
           />
         </Box>
+{/*
         <Box
           as="section"
           w={{ sm: "90%", lg: "60%" }}
@@ -142,6 +143,7 @@ export default function Home() {
             </Box>
           </Box>
         </Box>
+*/}
         <Box
           as="section"
           w={{ sm: "90%", md: "80%", lg: "73%" }}
