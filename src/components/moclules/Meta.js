@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { GA_TRACKING_ID } from "../../lib/gtag";
 
 export const Meta = (props) => {
   const { pageTitle, pageDescription } = props;
@@ -11,6 +12,23 @@ export const Meta = (props) => {
 
   return (
     <Head prefix="og: http://ogp.me/ns#">
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+
       <title>{title}</title>
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta name="description" content={description} />
