@@ -14,7 +14,7 @@ import { useRouter } from "next/router";
 export default function ClimateChange() {
   const router = useRouter();
   const onClickContact = () => router.push("/contact");
-  const onClickMore = () => router.push("http://lp.z-rek.com/");
+  const onClickMore = () => router.push("https://zrek.io/");
 
   return (
     <Box>
@@ -29,7 +29,7 @@ export default function ClimateChange() {
           <Box w={{ sm: "100%", lg: "50%" }}>
             <SectionTitle SectionTitle="クリエイターのインフラ構築"/>
             <Text>
-              私たちは、デジタルテクノロジーを活用して世界中のクリエイターの生活に欠かせないサービスを提供していきます。大好きなクリエイターがいる方、推しがいる方、創ることが大好きなクリエイターの皆様、ぜひ一度お話をしたいです。困っていることや悩みごとを聞かせてください。お気軽にご連絡ください。今村 → y.imamura@z-rek.com
+              私たちは、デジタルテクノロジーを活用して世界中のクリエイターの生活に欠かせないサービスを提供していきます。大好きなクリエイターがいる方、推しがいる方、創ることが大好きなクリエイターの皆様、ぜひ一度お話をしたいです。困っていることや悩みごとを聞かせてください。お気軽にご連絡ください。
             </Text>
           </Box>
           <Box display={{ sm: "none", lg: "block" }} w="50%">
@@ -58,13 +58,11 @@ export default function ClimateChange() {
             margin={{ sm: "4", lg: "8" }}
             onClick={onClickContact}
           />
-{/*              
           <BorderButton
-            title="もっと詳しく"
+            title="zrek.io"
             width={{ sm: "65%", md: "30%", lg: "17%" }}
             onClick={onClickMore}
           />
-*/}          
         </Box>
       </Box>
       <Footer />
