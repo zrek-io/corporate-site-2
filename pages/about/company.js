@@ -19,7 +19,7 @@ export default function Company() {
               <Td lineHeight={8}>
                 株式会社Zrek
                 <br />
-                Zrek Inc.
+                ZRΞK Inc.
               </Td>
             </Tr>
             <Tr>
@@ -48,7 +48,7 @@ export default function Company() {
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">事業内容</Td>
-              <Td>ブロックチェーンを活用したプロトコルの企画・開発・運用</Td>
+              <Td>ブロックチェーンを活用したプロトコルの開発・運用</Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">主要取引銀行</Td>
