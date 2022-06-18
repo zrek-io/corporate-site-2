@@ -58,11 +58,13 @@ export default function ClimateChange() {
             margin={{ sm: "4", lg: "8" }}
             onClick={onClickContact}
           />
+{/*
           <BorderButton
-            title="zrek.io"
+            title="zrek"
             width={{ sm: "65%", md: "30%", lg: "17%" }}
             onClick={onClickMore}
           />
+*/}
         </Box>
       </Box>
       <Footer />
