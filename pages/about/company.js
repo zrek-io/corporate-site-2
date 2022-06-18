@@ -25,9 +25,9 @@ export default function Company() {
             <Tr>
               <Td w="45%" textAlign="center">本社</Td>
               <Td lineHeight={8}>
-                〒248-0007
+                〒2470056
                 <br />
-                神奈川県鎌倉市大町1丁目1-14 HATSU鎌倉
+                神奈川県鎌倉市大船１丁目１１－２０鎌倉石原ビル５Ｆ
               </Td>
             </Tr>
             <Tr>
@@ -48,7 +48,7 @@ export default function Company() {
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">事業内容</Td>
-              <Td>クリエイターを支援するソフトウェアの企画・開発・運用</Td>
+              <Td>ブロックチェーンを活用したプロトコルの企画・開発・運用</Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">主要取引銀行</Td>
