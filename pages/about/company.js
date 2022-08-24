@@ -34,10 +34,11 @@ export default function Company() {
               <Td w="45%" textAlign="center">設立日</Td>
               <Td>2021年4月1日</Td>
             </Tr>
-            <Tr>
+{/*            <Tr>
               <Td w="45%" textAlign="center">顧問</Td>
               <Td>鈴木隆道</Td>
             </Tr>
+ */}
             <Tr>
               <Td w="45%" textAlign="center">役員</Td>
               <Td>代表取締役CEO 今村優希</Td>
