@@ -7,7 +7,7 @@ import { Meta } from "../../src/components/moclules/Meta"
 export default function Identity() {
   return (
     <Box>
-      <Meta pageTitle="経営理念" pageDescription="ゼットレックの経営理念です。" />
+      <Meta pageTitle="経営理念" pageDescription="ゼレックの経営理念です。" />
       <Header />
       <Hero title="経営理念" />
       <Box as="main" w={{ sm: '80%', lg: "60%" }} h={{ sm: '40vh', md: '50vh', lg: 'auto' }} mx="auto">
