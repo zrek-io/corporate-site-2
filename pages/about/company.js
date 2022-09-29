@@ -17,9 +17,7 @@ export default function Company() {
             <Tr>
               <Td textAlign="center">会社名</Td>
               <Td lineHeight={8}>
-                株式会社Zrek
-                <br />
-                ZRΞK Inc.
+                株式会社Zrek / Zrek Inc. / ZRΞK
               </Td>
             </Tr>
             <Tr>
@@ -34,26 +32,25 @@ export default function Company() {
               <Td w="45%" textAlign="center">設立日</Td>
               <Td>2021年4月1日</Td>
             </Tr>
-{/*            <Tr>
+            <Tr>
               <Td w="45%" textAlign="center">顧問</Td>
-              <Td>鈴木隆道</Td>
+              <Td>鈴木隆道（元東京都議会議員）</Td>
             </Tr>
- */}
             <Tr>
               <Td w="45%" textAlign="center">役員</Td>
-              <Td>代表取締役CEO 今村優希</Td>
+              <Td>代表取締役 今村優希</Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">従業員数</Td>
-              <Td>8名</Td>
+              <Td>3名</Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">事業内容</Td>
-              <Td>ブロックチェーンを活用したプロトコルの開発・運用</Td>
+              <Td>ブロックチェーンを活用したNFT特化のプロトコル開発・運用</Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">主要取引銀行</Td>
-              <Td>みずほ銀行 大船支店</Td>
+              <Td>みずほ銀行</Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">加盟団体</Td>
