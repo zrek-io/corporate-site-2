@@ -88,9 +88,9 @@ export const Footer = () => {
             </NextLink>
           </Box>
           <Box>
-            <NextLink href="/services/climate_change" passHref>
+            <NextLink href="/services/nft" passHref>
               <Link>
-                <Text fontSize="md" lineHeight={10}>クリエイター支援</Text>
+                <Text fontSize="md" lineHeight={10}>NFT事業</Text>
               </Link>
             </NextLink>
             <NextLink href="/services/software" passHref>
