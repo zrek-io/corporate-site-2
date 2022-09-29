@@ -132,8 +132,8 @@ export const MenuSp = () => {
                       </NextLink>
                     </ListItem>
                     <ListItem>
-                      <NextLink href="/services/climate_change" passHref>
-                        <Link fontSize="xs">クリエイター支援</Link>
+                      <NextLink href="/services/nft" passHref>
+                        <Link fontSize="xs">NFT事業</Link>
                       </NextLink>
                     </ListItem>
                     <ListItem>
