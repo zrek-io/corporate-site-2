@@ -8,7 +8,7 @@ import { Meta } from "../src/components/moclules/Meta"
 
 export default function Service() {
   const router = useRouter()
-  const onClickClimateChange = () => router.push('/services/climate_change')
+  const onClickNft = () => router.push('/services/nft')
   const onClickSoftware = () => router.push('/services/software')
   const onClickResearchAndDevelopment = () => router.push('/services/research_and_development')
 
@@ -18,9 +18,9 @@ export default function Service() {
       <Header />
       <Hero title="事業内容" />
       <Box as="main" display="flex" flexWrap="wrap" justifyContent={{ sm: 'center', md: 'space-between', lg: "space-between" }} w="73%" mx="auto" my={{ sm: 16, lg: 32 }}>
-        <Card title="クリエイター支援" explain="ゼットレックはクリエイター支援事業を展開しています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickClimateChange} />
-        <Card title="ソフトウェア開発" explain="ゼットレックはソフトウェアの受託開発を行なっています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickSoftware} />
-        <Card title="研究開発" explain="ゼットレックでは新しいテクノロジーの社会実装に向けた研究開発を行なっています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickResearchAndDevelopment} />
+        <Card title="NFT事業" explain="ゼレックはNFT事業を展開しています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickNft} />
+        <Card title="ソフトウェア開発" explain="ゼレックはソフトウェアの受託開発を行なっています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickSoftware} />
+        <Card title="研究開発" explain="ゼレックではブロックチェーンの社会実装に向けた研究開発を行なっています。" width={{ sm: '100%', md: '45%', lg: "30%" }} onClick={onClickResearchAndDevelopment} />
       </Box>
       <Footer />
     </Box>
