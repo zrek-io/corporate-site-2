@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
                 <br />
                 Eメール：privacy@z-rek.com
                 <br />
-                〒248-0007 神奈川県鎌倉市大町1丁目1-14 HATSU鎌倉
+                〒247-0056 神奈川県鎌倉市大船１丁目１１－２０鎌倉石原ビル５Ｆ
               </Text>
             </ListItem>
             <ListItem my={12} fontSize={{ sm: 'lg', lg: '2xl'}}>
