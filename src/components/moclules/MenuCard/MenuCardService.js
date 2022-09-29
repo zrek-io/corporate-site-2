@@ -64,7 +64,7 @@ export const MenuCardService = (props) => {
           </NextLink>
         </ListItem>
         <ListItem py={2}>
-          <NextLink href="/services/climate_change" passHref>
+          <NextLink href="/services/nft" passHref>
             <Link
               fontSize="md"
               _hover={{
@@ -74,7 +74,7 @@ export const MenuCardService = (props) => {
                 paddingBottom: "7px",
               }}
             >
-              クリエイター支援
+              NFT事業
             </Link>
           </NextLink>
         </ListItem>
