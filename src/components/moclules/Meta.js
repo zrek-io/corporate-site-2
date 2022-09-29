@@ -3,10 +3,9 @@ import { GA_TRACKING_ID } from "../../lib/gtag";
 
 export const Meta = (props) => {
   const { pageTitle, pageDescription } = props;
-  const defaultTitle = "Zrek Inc.";
+  const defaultTitle = "ZRΞK | NFTスタートアップ";
   const defaultDescription =
-    "ゼットレックは、デジタルテクノロジーを駆使して、持続可能な社会の実現を目指すスタートアップです。優しくて強い意志をもった人や企業と共に、良い未来を本気で創っていきたい。私たちはそんな純粋な想いを原動力に、活動しています。画期的なシステムを構築し、あらゆる人が人間らしく生きることができる世界を創っていきます。";
-
+        "ゼレックは、NFTの社会実装を目指すスタートアップです。強力な志と優しさを兼ね備えた企業と共に、日本の未来、Web3の未来を本気で創っていきたい。私たちはそんな純粋な想いを原動力に活動しています。あらゆる人が人間らしく生きることができるトークンの経済圏を実現します。";
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = pageDescription ? pageDescription : defaultDescription;
 
