@@ -19,18 +19,17 @@ export default function ClimateChange() {
   return (
     <Box>
       <Meta
-        pageTitle="クリエイター支援"
-        pageDescription="ゼットレックはクリエイター支援事業を展開しています。"
+        pageTitle="NFT事業"
+        pageDescription="ゼレックはNFT事業を展開しています。"
       />
       <Header />
-      <Hero title="クリエイター支援" />
+      <Hero title="NFT事業" />
       <Box as="main" w="80%" mx="auto">
         <Box display="flex" alignItems="center" justifyContent="center" my={20}>
           <Box w={{ sm: "100%", lg: "50%" }}>
-            <SectionTitle SectionTitle="クリエイターのインフラ構築"/>
+            <SectionTitle SectionTitle="NFTの市場拡大へ"/>
             <Text>
-              私たちは、デジタルテクノロジーを活用して世界中のクリエイターの生活に欠かせないサービスを提供していきます。大好きなクリエイターがいる方、推しがいる方、創ることが大好きなクリエイターの皆様、ぜひ一度お話をしたいです。困っていることや悩みごとを聞かせてください。お気軽にご連絡ください。
-            </Text>
+              NFTの市場づくりからプロトコル開発まで。私たちは、アーティストやクリエイターのNFTプロジェクトのプロデュース、企業向けのNFT講座・勉強会・ワークショップ、NFTイベントの企画から運営など、NFT領域の事業を幅広く展開しています。NFTに関するご相談は、お気軽にご連絡ください。            </Text>
           </Box>
           <Box display={{ sm: "none", lg: "block" }} w="50%">
             <Image
