@@ -13,7 +13,7 @@ export default function Brand() {
     <Box>
       <Meta
         pageTitle="ブランド"
-        pageDescription="ゼットレックの社名由来、ロゴ、カラーについて記載しています。"
+        pageDescription="ゼレックの社名由来、ロゴ、カラーについて記載しています。"
       />
       <Header />
       <Hero title="ブランド" />
@@ -37,21 +37,7 @@ export default function Brand() {
           />
           <Box w={{ sm: "85%", lg: "60%" }} mx="auto" lineHeight={8}>
             <Text py={5}>「Z」と「Trek」の造語です。</Text>
-            <Text py={5}>
-              「Z」は、アルファベットの最終文字且つ最も希少で使われない文字とされています。最後まで、最高のといった意味があります。
-              <br />
-              「Trek」は、骨の折れる長い旅という意味を持っています。映画やドラマで人気の作品『スタートレック』から由来しています。
-            </Text>
-            <Text py={5}>
-              2つを組み合わせると「Zrek」です。最高の旅をする企業になろうという意味が込められています。
-            </Text>
-            <Text py={5}>
-              また、本来であれば「Z」の発音は英語圏で「ゼッド」になります。しかし、日本では「ゼット」と発音する場合が多く、日本人としての精神を忘れないような読み方になっています。
-            </Text>
-            <Text py={5}>
-              フォントは『Gotham』を使用しています。デザイナー Tobias
-              Frere-Jones
-              氏が「力強くて、新しくて新鮮な」文字をコンセプトに作成したフォントです。音楽ストリーミングサービス『Spotify』などにも使用されています。
+            <Text py={5}>「Z」は、アルファベットの最終文字且つ最も希少で使われない文字とされています。最高の、という意味があります。「Trek」は、骨の折れる長い旅という意味を持っています。2つを組み合わせて「Zrek」です。最高の旅を届ける企業であり続けるという意味が込められています。
             </Text>
           </Box>
         </Box>
@@ -81,7 +67,8 @@ export default function Brand() {
         </Box>
         <Box w="100%" mb={20}>
           <SectionTitle SectionTitle="カラー" />
-          <Box
+{/*
+            <Box
             display="flex"
             alignItem="center"
             justifyContent="space-evenly"
@@ -99,9 +86,10 @@ export default function Brand() {
               bgColor="primary.350"
             ></Box>
           </Box>
+*/}
           <Box w={{ sm: "85%", lg: "60%" }} mx="auto" lineHeight={8}>
             <Text py={5}>
-              ゼットレックカラーは、青で統一されています。クールさとシンプルさがあるカラーとして選ばれ、ロゴと組み合わせたときのストーリー性を追求したカラーとなっています。
+              ゼレックカラーは、黒・白・青で構成されています。クールさとシンプルさがあるカラーとして選ばれ、ロゴと組み合わせたときのストーリー性を追求したカラーとなっています。
             </Text>
           </Box>
         </Box>
