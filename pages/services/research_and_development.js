@@ -12,7 +12,7 @@ export default function Randd() {
     <Box>
       <Meta
         pageTitle="研究開発"
-        pageDescription="ゼットレックでは新しいテクノロジーの社会実装に向けた研究開発を行なっています。"
+        pageDescription="ゼレックではブロックチェーンの社会実装に向けた研究開発を行なっています。"
       />
       <Header />
       <Hero title="研究開発" />
@@ -31,10 +31,9 @@ export default function Randd() {
           mb={8}
         >
           <Box w={{ sm: "100%", lg: "50%" }}>
-            <SectionTitle SectionTitle="新たなテクノロジーの社会実装" />
+            <SectionTitle SectionTitle="ブロックチェーンの社会実装" />
             <Text>
-              私たちは、ブロックチェーンやディープラーニングなど新しいテクノロジーを活用し、革新的なプロダクトを生み出すための研究開発を行っています。システムという全体の構造を俯瞰して捉えながら、どのようにしてサービスに組み込んでいくのかを積極的に検討し、実装につなげていきます。
-            </Text>
+              私たちは、ブロックチェーンを活用し、革新的なプロダクトを生み出すための研究開発を行っています。システム全体の構造を俯瞰して捉え、どのようにサービスに組み込むべきかを積極的に実験、社会への実装に繋げていきます。            </Text>
           </Box>
           <Box display={{ sm: "none", lg: "block" }} w="50%">
             <Image src={randdIamge.src} w="75%" mx="auto" alt="研究開発" />
