@@ -41,6 +41,7 @@ export default function Home() {
         bgImage={HeroBackgroundImage.src}
         bgSize="cover"
       >
+{/*
         <Image
           src={HomeHeroMessage.src}
           pos="absolute"
@@ -49,6 +50,7 @@ export default function Home() {
           w={{ sm: "90%", md: "60%", lg: "50%" }}
           alt="スローガン"
         />
+*/}
       </Box>
       <Box as="main" w="100%">
         <Box
@@ -60,7 +62,7 @@ export default function Home() {
         >
           <Box py={[8, 12]}>
             <Heading as="h1" size="xl">
-              ゼットレックとは
+              ゼレックとは
             </Heading>
             <Heading as="h2" size="md" pt={4}>
               About us
@@ -68,8 +70,7 @@ export default function Home() {
           </Box>
           <Box>
             <Text>
-              ゼットレックは、デジタルテクノロジーを駆使して、持続可能な社会の実現を目指すスタートアップです。優しくて強い意志をもった人や企業と共に、良い未来を本気で創っていきたい。私たちはそんな純粋な想いを原動力に、活動しています。画期的なシステムを構築し、あらゆる人が人間らしく生きることができる世界を創っていきます。
-            </Text>
+                ゼレックは、NFTの社会実装を目指すスタートアップです。強力な志と優しさを兼ね備えた企業と共に、日本の未来、Web3の未来を本気で創っていきたい。私たちはそんな純粋な想いを原動力に活動しています。あらゆる人が人間らしく生きることができるトークンの経済圏を実現します。            </Text>
           </Box>
           <PrimaryButton
             title="ビジョン"
@@ -78,72 +79,6 @@ export default function Home() {
             onClick={onClickToVision}
           />
         </Box>
-{/*
-        <Box
-          as="section"
-          w={{ sm: "90%", lg: "60%" }}
-          mx="auto"
-          my={16}
-          textAlign="center"
-        >
-          <Box py={[8, 12]}>
-            <Heading as="h1" size="xl">
-              サービス
-            </Heading>
-            <Heading as="h2" size="md" py={4}>
-              Service
-            </Heading>
-          </Box>
-          <Box
-            display="flex"
-            flexWrap="wrap-reverse"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Box textAlign="left" w={{ sm: "90%", md: "70%", lg: "55%" }}>
-              <Heading
-                as="h3"
-                size="sm"
-                textAlign={{ sm: "center", lg: "left" }}
-              >
-                流れを敏感に捉え、地球を支える
-              </Heading>
-              <Heading
-                as="h3"
-                size="sm"
-                textAlign={{ sm: "center", lg: "left" }}
-                pt={4}
-              >
-                Everyday Action for the Earth.
-              </Heading>
-              <Text py={8}>
-                後世まで綺麗な地球を残すため、勇気を振り絞って、それぞれが小さなアクションを起こすことが大切です。それが私たちの責任であり、良い未来を築くために必要不可欠なことです。ゼットレっくは、そんな勇気ある人々を支援するために全力を尽くして、共に世界を前進させていきます。
-              </Text>
-              <Box
-                display="flex"
-                w="100%"
-                justifyContent="space-evenly"
-                flexWrap="wrap"
-              >
-                <PrimaryButton
-                  title="事業内容"
-                  width={{ sm: "60%", md: "45%", lg: "35%" }}
-                  margin={{ sm: 4, md: "0", lg: 0 }}
-                  onClick={onClickToServices}
-                />
-                <BorderButton
-                  title="もっと詳しく"
-                  width={{ sm: "60%", md: "45%", lg: "35%" }}
-                  onClick={onClickMore}
-                />
-              </Box>
-            </Box>
-            <Box w={{ sm: "90%", md: "70%", lg: "45%" }}>
-              <Image src={HomeServiceImage.src} alt="Zrekの提供サービス" />
-            </Box>
-          </Box>
-        </Box>
-*/}
         <Box
           as="section"
           w={{ sm: "90%", md: "80%", lg: "73%" }}
@@ -160,9 +95,14 @@ export default function Home() {
             </Heading>
             <Box py={6} textAlign="left">
               <NewsItem
-                date="2021.11.9"
+                date="2022.7.1"
+                tag="サービス"
+                title="NFT事業を開始しました"
+              />
+              <NewsItem
+                date="2022.03.28"
                 tag="コーポレート"
-                title="クリエイター支援事業を開始しました"
+                title="本店を移転しました"
               />
               <NewsItem
                 date="2021.11.3"
@@ -173,11 +113,6 @@ export default function Home() {
                 date="2021.9.18"
                 tag="お知らせ"
                 title="代表の今村がHATSUFESで成果発表会を行いました"
-              />
-              <NewsItem
-                date="2021.8.23"
-                tag="サービス"
-                title="カーボンカードのランディングページを公開しました"
               />
             </Box>
             <PrimaryButton
