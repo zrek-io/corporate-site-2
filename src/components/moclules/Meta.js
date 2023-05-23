@@ -31,14 +31,14 @@ export const Meta = (props) => {
       <title>{title}</title>
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta name="description" content={description} />
-      {/* <meta property="og:url" content="" /> */}
+      <meta property="og:url" content="https://zrek.io/" />
       <meta property="og:title" content={title} />
       <meta property="og:site_name" content="株式会社Zrek" />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta
         property="og:image"
-        content="https://z-rek.com/static/images/ogp.png"
+        content="https://zrek.io/static/images/ogp.png"
       />
       <meta property="og:image:width" content="1280" />
       <meta property="og:image:height" content="640" />
