@@ -7,7 +7,7 @@ import { Meta } from "../../src/components/moclules/Meta"
 export default function Vision() {
   return (
     <Box>
-      <Meta pageTitle="ビジョン" pageDescription="ゼットレックのバリュー、パーパス、ミッションについて記載しています。" />
+      <Meta pageTitle="ビジョン" pageDescription="ゼレックのバリュー、パーパス、ミッションについて記載しています。" />
       <Header />
       <Hero title="ビジョン" />
       <Box as="main" w={{ sm: '90%', md: '80%', lg: "60%" }} mx="auto">
@@ -27,10 +27,10 @@ export default function Vision() {
           <Heading as="h1" size="lg">Purpose</Heading>
           <Text my={4}>我々は最高のものを創り、世の中を前進させるために存在している。</Text>
         </Box>
-        <Box my={12}>
+        {/* <Box my={12}>
           <Heading as="h1" size="lg">Mission</Heading>
           <Text my={4}>NFTを大衆化させる</Text>
-        </Box>
+        </Box> */}
       </Box>
       <Footer />
     </Box>

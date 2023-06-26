@@ -46,7 +46,7 @@ export default function Company() {
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">事業内容</Td>
-              <Td>ブロックチェーンを活用したNFT特化のプロトコル開発・運用</Td>
+              <Td>ブロックチェーンを活用したシステムの開発・運用 / リサーチ業務 / コンサルティング業務 </Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">主要取引銀行</Td>

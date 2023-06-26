@@ -3,9 +3,9 @@ import { GA_TRACKING_ID } from "../../lib/gtag";
 
 export const Meta = (props) => {
   const { pageTitle, pageDescription } = props;
-  const defaultTitle = "ZRΞK | NFTスタートアップ";
+  const defaultTitle = "ZRΞK | ゼレック";
   const defaultDescription =
-        "ゼレックは、NFTの社会実装を目指すスタートアップです。強力な志と優しさを兼ね備えた企業と共に、日本の未来、Web3の未来を本気で創っていきたい。私たちはそんな純粋な想いを原動力に活動しています。あらゆる人が人間らしく生きることができるトークンの経済圏を実現します。";
+        "ゼレックは、ブロックチェーンの社会実装を目指すスタートアップです。強力な志と優しさを兼ね備えた企業と共に、日本の未来、Web3の未来を本気で創っていきたい。私たちはそんな純粋な想いを原動力に活動しています。あらゆる人が人間らしく生きることができるトークンの経済圏を実現します。";
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
   const description = pageDescription ? pageDescription : defaultDescription;
 
