@@ -154,7 +154,7 @@ export const Footer = () => {
         </Link>
       </Box>
       <Box textAlign="center" py={4}>
-        <Text fontSize="xs">Copyright &copy; 2021 Zrek Inc. 株式会社Zrek</Text>
+        <Text fontSize="xs">Copyright &copy; {new Date().getFullYear()} Zrek Inc.</Text>
       </Box>
     </Box>
   )
