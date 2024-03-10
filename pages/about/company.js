@@ -41,12 +41,12 @@ export default function Company() {
               <Td>代表取締役 今村優希</Td>
             </Tr>
             <Tr>
-              <Td w="45%" textAlign="center">従業員数</Td>
-              <Td>3名</Td>
+              <Td w="45%" textAlign="center">メンバー数</Td>
+              <Td>7名（役員含む）</Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">事業内容</Td>
-              <Td>ブロックチェーンを活用したシステムの開発・運用 / リサーチ業務 / コンサルティング業務 </Td>
+              <Td>ブロックチェーンを活用したシステム開発・運用 / リサーチ・コンサルティング業務 / ソフトウェア開発・運用・保守 </Td>
             </Tr>
             <Tr>
               <Td w="45%" textAlign="center">主要取引銀行</Td>
